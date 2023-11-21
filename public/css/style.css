@@ -1,0 +1,127 @@
+body {
+  background-color: #141114;
+  overflow-x: hidden;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Raleway;
+}
+
+.video__title {
+  -webkit-text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+  -moz-text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+}
+
+.video {
+  display: block;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.video__bg {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    90deg,
+    #7a02b6 0%,
+    #bb2284 30.43%,
+    #7a02b6 68.23%,
+    #6e0c4d 100%
+  );
+  background-size: 200% 200%;
+  border-radius: 10px;
+  animation: AnimateBorder 2s ease infinite;
+  -webkit-animation: AnimateBorder 2s ease infinite;
+  -moz-animation: AnimateBorder 2s ease infinite;
+  transform: translate(-2px, -2px);
+  transition: filter 0.5s ease-in;
+}
+
+.video__wrapper .video__bg {
+  filter: blur(10px);
+  transition: filter 0.4s ease-in;
+}
+
+.button__gradient {
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+  background: #141114;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 1px transparent;
+  /* !importanté */
+  border-radius: 12px;
+  /* background: linear-gradient(#FFA5F6, #A35AFF); */
+}
+
+.button__gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: 12px;
+  /* !importanté */
+  background: linear-gradient(-45deg, #FFA5F6, #A35AFF);
+}
+
+.background__text {
+  z-index: -1;
+  color: #141114;
+  width: 100%;
+  margin-left: -25px;
+}
+
+.background__text span {
+  font-size: 100px;
+  background: linear-gradient(45deg, #984989, #7b7680, #7b7680);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+}
+
+.arrow {
+  right: -1.75rem;
+  bottom: 0.2rem;
+  /* bottom: -2rem; */
+}
+
+@-webkit-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
