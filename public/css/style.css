@@ -60,7 +60,7 @@ header {
   /* !importanté */
   border: solid 1px transparent;
   /* !importanté */
-  border-radius: 12px;
+  border-radius: 8px;
   /* background: linear-gradient(#FFA5F6, #A35AFF); */
 }
 
@@ -73,9 +73,12 @@ header {
   left: 0;
   z-index: -1;
   margin: -2px;
-  /* !importanté */
-  border-radius: 12px;
-  /* !importanté */
+  border-radius: inherit;
+  background: linear-gradient(-45deg, #FFA5F6, #A35AFF);
+}
+
+.button__gradient:hover {
+  /* background: #FFA5F6; */
   background: linear-gradient(-45deg, #FFA5F6, #A35AFF);
 }
 
