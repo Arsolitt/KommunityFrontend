@@ -61,7 +61,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -3px;
+  margin: -1px;
   border-radius: inherit;           
   background: linear-gradient(271deg, #FFA5F6 9.37%, #B8EAFF 43.21%, #A35AFF 78.74%, #EBC2E2 111.38%); 
 }
