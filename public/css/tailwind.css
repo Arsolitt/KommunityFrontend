@@ -623,6 +623,10 @@ video {
   height: 1.75rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -641,6 +645,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-b-2xl {
