@@ -95,14 +95,14 @@ body {
 .purple__ellipse {
   margin-left: -10%;
   margin-top: 50px;
-  /* top: 0; */
+  top: 0;
   /* top: 30; */
 }
 
 .red__ellipse {
   margin-right: -10%;
   top: 0;
-  /* margin-top: 120px; */
+  margin-top: 120px;
 }
 
 @keyframes background__text__stroke {
