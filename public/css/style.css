@@ -1,10 +1,10 @@
 body {
-  background-color: #141114;
+  /* background-color: #141114; */
   font-variant-numeric: lining-nums proportional-nums;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Raleway;
+  background: radial-gradient(31.05% 22.69% at 0% 53.64%, rgba(246, 0, 0, 0.20) 0%, rgba(20, 17, 20, 0.20) 100%), radial-gradient(34.76% 22.81% at 100% 67.32%, rgba(255, 138, 0, 0.20) 38.35%, rgba(20, 17, 20, 0.20) 100%), #141114;
 }
-
 
 .video__title {
   -webkit-text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
@@ -12,17 +12,16 @@ body {
   text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
 }
 
-.video__wrapper {
+/* .video__wrapper {
   width: 280px;
   height: 180px;
-}
+} */
 
 .video {
   display: block;
   border-radius: 10px;
   border: 0px;
   cursor: pointer;
-
 }
 
 .video__bg {
@@ -68,12 +67,24 @@ body {
   left: 0;
   z-index: -1;
   margin: -1px;
-  border-radius: inherit;           
-  background: linear-gradient(271deg, #FFA5F6 9.37%, #B8EAFF 43.21%, #A35AFF 78.74%, #EBC2E2 111.38%); 
+  border-radius: inherit;
+  background: linear-gradient(
+    271deg,
+    #ffa5f6 9.37%,
+    #b8eaff 43.21%,
+    #a35aff 78.74%,
+    #ebc2e2 111.38%
+  );
 }
 
 .button__gradient:hover {
-  background: linear-gradient(271deg, #FFA5F6 9.37%, #B8EAFF 43.21%, #A35AFF 78.74%, #EBC2E2 111.38%);
+  background: linear-gradient(
+    271deg,
+    #ffa5f6 9.37%,
+    #b8eaff 43.21%,
+    #a35aff 78.74%,
+    #ebc2e2 111.38%
+  );
 }
 
 .button__gradient:hover::before {
@@ -83,8 +94,13 @@ body {
 .background__text {
   font-size: 100px;
   color: #141114;
-  background: linear-gradient(to right, rgba(255, 102, 208, 1), rgba(159, 157, 255, 1), rgba(255, 255, 255, 1));
-  background-color:rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to right,
+    rgba(255, 102, 208, 1),
+    rgba(159, 157, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  background-color: rgba(0, 0, 0, 0.1);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -94,8 +110,6 @@ body {
   bottom: 0.2rem;
   /* bottom: -2rem; */
 }
-
-
 
 .purple__ellipse {
   margin-left: -10%;
@@ -115,13 +129,13 @@ body {
     -webkit-text-stroke: 2px #7b7680;
   }
   to {
-    -webkit-text-stroke: 2px rgba(77, 38, 129, 0.40);
+    -webkit-text-stroke: 2px rgba(77, 38, 129, 0.4);
   }
 }
 
 @keyframes background__text__gradient {
   from {
-    -webkit-text-stroke: 2px rgba(77, 38, 129, 0.40);
+    -webkit-text-stroke: 2px rgba(77, 38, 129, 0.4);
   }
   to {
     background: linear-gradient(45deg, #984989, #7b7680, #7b7680);
