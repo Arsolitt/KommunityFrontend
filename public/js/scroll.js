@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
   const t =
     window.scrollY /
     (document.documentElement.scrollHeight - window.innerHeight);
-  header.style.WebkitTextStroke = `2px rgba(77, 38, 129, ${1 - t})`;
+  header.style.WebkitTextStroke = `1px rgba(77, 38, 129, ${1 - t})`;
 });
 // ${-t * 100}% 0
 
