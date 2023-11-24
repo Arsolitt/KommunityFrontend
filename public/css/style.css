@@ -47,7 +47,8 @@ body {
   margin: auto;
   position: relative;
   box-sizing: border-box;
-  background: #141114;
+  /* background: #141114; */
+  background: linear-gradient(90deg, #21152D 0.71%, #141114 47.75%, #141114 61.83%, #2D1222 100%); 
   background-clip: padding-box;
   border: solid 1px transparent;
   border-radius: 8px;
