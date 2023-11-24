@@ -1,10 +1,10 @@
 body {
   background-color: #141114;
-  overflow-x: hidden;
   font-variant-numeric: lining-nums proportional-nums;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Raleway;
 }
+
 
 .video__title {
   -webkit-text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
@@ -49,11 +49,8 @@ body {
   box-sizing: border-box;
   background: #141114;
   background-clip: padding-box;
-  /* !importanté */
   border: solid 1px transparent;
-  /* !importanté */
   border-radius: 8px;
-  /* background: linear-gradient(#FFA5F6, #A35AFF); */
 }
 
 .button__gradient::before {
@@ -77,29 +74,13 @@ body {
   background: none;
 }
 
-.background__text__wrapper {
-  z-index: -1;
-  color: #141114;
-  width: 100%;
-  margin-left: -25px;
+.background__text {
   font-size: 100px;
-}
-
-.background__text__stroke {
-  animation-duration: 2s;
-  animation-name: background__text__stroke;
-  -webkit-text-stroke: 2px rgba(77, 38, 129, 0.40);
-}
-
-.background__text__gradient {
-  animation-duration: 2s;
-  animation-name: background__text__gradient;
-  
-  background: linear-gradient(45deg, #984989, #7b7680, #7b7680);
+  color: #141114;
+  background: linear-gradient(to right, #984989, #7b7680, #7b7680);
+  background-color:rgba(0, 0, 0, 0.1);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 2px transparent;
-  
 }
 
 .arrow {

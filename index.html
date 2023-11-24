@@ -15,10 +15,10 @@
     <title>Kommunity</title>
   </head>
 
-  <body class="">
-    <div id="app" class="">
-      <header
-        class="flex items-center justify-between bg-white rounded-b-2xl w-full h-7 fixed z-50"
+  <body class="" style="overflow-x: hidden; position: relative;">
+    <div id="app" class="" style="width: 320px; overflow-x: hidden;">
+      <nav
+        class="flex items-center bg-white rounded-b-2xl h-7 fixed z-50 w-full"
       >
         <svg
           class="ml-3 mr-5"
@@ -83,17 +83,15 @@
           </defs>
         </svg>
 
-        <ul
-          class="flex text-xs items-center justify-around w-full h-full font-medium"
-        >
+        <ul class="flex text-xs font-medium w-full justify-between">
           <li class="nav-link">Работы</li>
           <li class="nav-link">Отзывы</li>
           <li class="nav-link">Команда</li>
           <li class="nav-link">Магазин</li>
         </ul>
-      </header>
+      </nav>
       <main class="text-white m-auto pt-16 relative">
-        <article class="w-11/12 mx-auto relative">
+        <section class="w-11/12 mx-auto relative mb-20">
           <svg
             class="purple__ellipse absolute"
             width="221"
@@ -151,9 +149,9 @@
             <p class="mb-10 leading-5">
               Здесь вы можете создать сайт, заказать фотосет и многое другое ;)
             </p>
-              <button class="w-full button__gradient font-bold">
-                Сотворить стилёк
-              </button>
+            <button class="w-full button__gradient font-bold">
+              Сотворить стилёк
+            </button>
           </div>
           <svg
             class="red__ellipse absolute right-0 -z-10"
@@ -197,14 +195,18 @@
               </filter>
             </defs>
           </svg>
-        </article>
+        </section>
+        <span
+          class="background__text font-bold -ml-2"
+          style="-webkit-text-stroke: 3px rgba(77, 38, 129, 1)"
+          ><nobr>Как это</nobr></span>
 
-        <article class="w-11/12 mx-auto mt-36">
+        <section class="w-11/12 mx-auto -mt-16">
           <div class="w-10/12">
             <div class="section__header relative">
-              <div class="background__text__wrapper absolute -mt-24 font-bold">
-                <span class="background__text__inner background__text__stroke"><nobr>Как это</nobr></span>
-              </div>
+              <!-- <div class="background__text__wrapper -mt-24 font-bold">
+                <span class="background__text" style="-webkit-text-stroke: 3px rgba(77, 38, 129, 1);"><nobr>Как это</nobr></span>
+              </div> -->
               <h3 class="text-4xl font-bold mb-8">Как это работает</h3>
             </div>
 
@@ -240,7 +242,7 @@
               </svg>
             </h3>
           </div>
-        </article>
+        </section>
       </main>
     </div>
   </body>
