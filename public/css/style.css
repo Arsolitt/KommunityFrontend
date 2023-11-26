@@ -11,11 +11,6 @@ body {
   text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
 }
 
-/* .video__wrapper {
-  width: 280px;
-  height: 180px;
-} */
-
 .video {
   display: block;
   border-radius: 10px;
@@ -51,7 +46,8 @@ body {
   margin: auto;
   position: relative;
   box-sizing: border-box;
-  background: #141114;
+  /* background: #141114; */
+  background: linear-gradient(90deg, #21152D 0.71%, #141114 47.75%, #141114 61.83%, #2D1222 100%); 
   background-clip: padding-box;
   border: solid 1px transparent;
   border-radius: 8px;
@@ -99,7 +95,7 @@ body {
     rgba(159, 157, 255, 1),
     rgba(255, 255, 255, 1)
   );
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1); */
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -109,16 +105,12 @@ body {
   bottom: 0.2rem;
 }
 
-.purple__ellipse {
-  margin-left: -10%;
-  margin-top: 30%;
-  top: 0;
+.background__ellipse__purple {
+  margin-top: 25%;
 }
 
-.red__ellipse {
-  margin-right: -10%;
-  top: 0;
-  margin-top: 60%;
+.background__ellipse__red {
+  margin-top: 50%;
 }
 
 .card__img {
