@@ -1,9 +1,8 @@
 body {
-  /* background-color: #141114; */
+  background-color: #141114;
   font-variant-numeric: lining-nums proportional-nums;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Raleway;
-  background: radial-gradient(31.05% 22.69% at 0% 53.64%, rgba(246, 0, 0, 0.20) 0%, rgba(20, 17, 20, 0.20) 100%), radial-gradient(34.76% 22.81% at 100% 67.32%, rgba(255, 138, 0, 0.20) 38.35%, rgba(20, 17, 20, 0.20) 100%), #141114;
 }
 
 .video__title {
@@ -108,20 +107,25 @@ body {
 .arrow {
   right: -1.75rem;
   bottom: 0.2rem;
-  /* bottom: -2rem; */
 }
 
 .purple__ellipse {
   margin-left: -10%;
-  margin-top: 50px;
+  margin-top: 30%;
   top: 0;
-  /* top: 20; */
 }
 
 .red__ellipse {
   margin-right: -10%;
   top: 0;
-  margin-top: 120px;
+  margin-top: 60%;
+}
+
+.card__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+  border-radius: 12px;
 }
 
 @keyframes background__text__stroke {
