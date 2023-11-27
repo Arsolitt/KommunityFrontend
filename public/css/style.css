@@ -42,10 +42,11 @@ body {
   transition: filter 0.4s ease-in;
 }
 
-.button__gradient {
-  margin: auto;
-  position: relative;
-  box-sizing: border-box;
+.button__gradient__solid {
+  background: #141114;
+}
+
+.button__gradient__glowing {
   background: linear-gradient(
     90deg,
     #21152d 0.71%,
@@ -53,6 +54,12 @@ body {
     #141114 61.83%,
     #2d1222 100%
   );
+}
+
+.button__gradient {
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
   background-clip: padding-box;
   border: solid 1px transparent;
   border-radius: 8px;
@@ -122,6 +129,25 @@ body {
   background-size: cover;
   height: 160px;
   border-radius: 12px;
+}
+
+footer {
+  background-color: #680064;
+  padding: 20px 20px 0px 20px;
+  border-radius: 20px 20px 0 0;
+  text-underline-offset: 6px;
+}
+
+footer > img {
+  border-radius: 12px;
+}
+
+.underline-offset-16 {
+  text-underline-offset: 16px;
+}
+
+.text-vxs {
+  font-size: 0.625rem;
 }
 
 @-webkit-keyframes AnimateBorder {
