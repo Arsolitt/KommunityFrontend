@@ -219,11 +219,11 @@
 
           <article class="slider__team mt-8">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -236,11 +236,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -253,11 +253,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -270,11 +270,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -287,11 +287,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -304,11 +304,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -321,11 +321,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -338,11 +338,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -355,11 +355,11 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide slider__team__slide">
                 <img
                   src="./public/img/team/polina.png"
                   alt=""
-                  class="object-cover slider__image"
+                  class="object-cover slider__team__image"
                 />
                 <div class="mt-4">
                   <h5 class="flex justify-between font-bold">
@@ -373,7 +373,7 @@
               </div>
             </div>
 
-            <div class="slider__navigation flex justify-between mt-5">
+            <div class="slider__team__navigation flex justify-between mt-5">
               <img
                 src="./public/img/svg/slider__arrow__prev.svg"
                 alt=""
@@ -418,37 +418,147 @@
           <img src="./public/img/svg/main__cubes.svg" class=""></img>
         </div>
 
+        <span class="background__text font-bold -ml-2"
+        ><nobr>Отзывы</nobr></span
+      >
+
         <section class="w-11/12 mx-auto -mt-14">
           <div class="section__header relative">
-            <h3 class="text-4xl font-bold mb-8">Наша команда</h3>
+            <h3 class="text-4xl font-bold mb-8">Отзывы клиентов</h3>
           </div>
-
-          <p class="text-sm -mt-3">
-            Да, да — хватит тратить свое время и ехать в офис ради небольшого
-            диалога.
-          </p>
 
           <article class="slider__reviews mt-8">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="./public/img/team/polina.png"
-                  alt=""
-                  class="object-cover slider__image"
-                />
-                <div class="mt-4">
-                  <h5 class="flex justify-between font-bold">
-                    Полина
-                    <a href="" class="card__button"
-                      ><img src="./public/img/svg/card__button.svg" alt=""
-                    /></a>
-                  </h5>
-                  <span class="font-medium">Дизайнер</span>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
                 </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
               </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+
+              <div class="swiper-slide slider__reviews__slide">
+                <div class="slider__reviews__header flex justify-between">
+                  <img src="./public/img/reviews/avatar_1.png" alt="" class="slider__reviews__avatar w-12 h-12 object-cover">
+                  <div class="text-right">
+                    <span class="slider__reviews__name font-semibold">Олег Васильевич</span>
+                    <span class="slider__reviews__info text-sm font-medium">ООО ClubServiсe</span>
+                  </div>
+
+                </div>
+                <p class="slider__reviews__text bg-white text-black text-sm p-4 mt-7">
+                  С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты.  Мы работаем с Натальей,  и её самое ценное качество - вовлеченность в процесс. 
+                </p>
+              </div>
+              
             </div>
 
-            <div class="slider__navigation flex justify-between mt-5">
+            <div class="slider__reviews__navigation flex justify-between mt-5">
               <img
                 src="./public/img/svg/slider__arrow__prev.svg"
                 alt=""
@@ -466,6 +576,8 @@
             </div>
           </article>
         </section>
+
+
         
       </main>
     </div>

@@ -1,23 +1,38 @@
-.swiper-slide {
+/* .slider__team__slide {
   max-width: 180px;
 }
 
+.slider__reviews__slide {
+	max-width: 280px;
+} */
+
 .slider__team{
-	width: 120%;
+	width: 130%;
 }
 
-.slider__navigation{
-	width: 82%;
+.slider__reviews {
+	width: 185%;
 }
 
-.slider__image{
+
+.slider__team__navigation{
+	width: 77%;
+}
+
+.slider__reviews__navigation {
+	width: 54.5%;
+}
+
+.slider__team__image{
 	border-radius: 10px;
 	max-height: 180px;
 	width: 100%;
 }
 
-.filters {position: absolute;}
+.slider__reviews__avatar {
+	border-radius: 50%;
+}
 
-.slider__team .swiper-wrapper {
-	filter: url('#blur');
+.slider__reviews__text {
+	border-radius: 10px;
 }
