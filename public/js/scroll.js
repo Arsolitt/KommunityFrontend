@@ -2,11 +2,9 @@ const bgHeaders = document.querySelectorAll(".background__text");
 bgHeaders.forEach((bgHeader) => {
   bgHeaderStroke(bgHeader, 1);
 });
-const pageArrows = document.querySelectorAll(".arrow");
 
 window.addEventListener("scroll", () => {
   changeBgHeaderOpacity();
-  changeArrowPosition();
 });
 
 function changeBgHeaderOpacity() {
@@ -23,10 +21,6 @@ function changeBgHeaderOpacity() {
       bgHeaderStroke(bgHeader, opacity);
     }
   });
-}
-
-function changeArrowPosition() {
-
 }
 
 function bgHeaderStroke(bgHeader, opacity) {

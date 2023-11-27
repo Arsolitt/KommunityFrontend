@@ -1,0 +1,23 @@
+.swiper-slide {
+  max-width: 180px;
+}
+
+.slider__team{
+	width: 120%;
+}
+
+.slider__navigation{
+	width: 82%;
+}
+
+.slider__image{
+	border-radius: 10px;
+	max-height: 180px;
+	width: 100%;
+}
+
+.filters {position: absolute;}
+
+.slider__team .swiper-wrapper {
+	filter: url('#blur');
+}

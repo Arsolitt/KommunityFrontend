@@ -9,9 +9,26 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/523a8fe7f9.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./public/css/tailwind.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/slider.css" />
+
     <script defer src="./public/js/scroll.js"></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="./public/js/slider.js"></script>
+
     <title>Kommunity</title>
   </head>
 
@@ -20,7 +37,7 @@
       <nav
         class="flex items-center bg-white rounded-b-2xl h-9 fixed z-50 w-full"
       >
-        <img src="./public/img/svg/nav__logo.svg" alt="" class="ml-3 mr-5">
+        <img src="./public/img/svg/nav__logo.svg" alt="" class="ml-3 mr-5" />
 
         <ul class="flex text-xs font-medium w-full justify-around">
           <li class="nav-link">Работы</li>
@@ -67,35 +84,42 @@
             </button>
           </div>
         </section>
-        <span
-          class="background__text font-bold -ml-2"
+        <span class="background__text font-bold -ml-2"
           ><nobr>Как это</nobr></span
         >
 
         <section class="w-11/12 mx-auto -mt-14">
-          <div class="w-10/12">
+          <div class="w-11/12">
             <div class="section__header relative">
               <h3 class="text-4xl font-bold mb-8">Как это работает</h3>
             </div>
 
-            <p class="text-base">
+            <p class="text-sm">
               Вы даёте нам задачу — а мы собираем именно под неё уникальную
               команду креативных специалистов.
             </p>
             <br />
-            <p class="text-base">
+            <p class="text-sm">
               Все параметры работы подбираются под ваши возможности: время,
               сложность и стоимость.
             </p>
-            <h3 class="text-base text-right font-semibold">Но!</h3>
+            <br />
+            <h3 class="text-base text-right font-semibold w-11/12">Но!</h3>
+            <br />
             <p>
               Качество креативного продукта остается всегда на высоте — ведь мы
               в Комьюнити любим мутить стилёк ;)
             </p>
-            <h3 class="text-base text-right relative font-semibold">
+            <br />
+            <h3 class="text-base text-right relative font-semibold w-11/12">
               Убедись сам
-              <img src="./public/img/svg/main__arrow.svg" alt="" class="arrow absolute z-50">
+              <img
+                src="./public/img/svg/main__arrow.svg"
+                alt=""
+                class="arrow absolute animate-bounce -mb-8"
+              />
             </h3>
+            <br />
           </div>
         </section>
 
@@ -179,6 +203,270 @@
           </div>
         </section>
 
+        <span class="background__text font-bold -ml-2"
+          ><nobr>Команда</nobr></span
+        >
+
+        <section class="w-11/12 mx-auto -mt-14">
+          <div class="section__header relative">
+            <h3 class="text-4xl font-bold mb-8">Наша команда</h3>
+          </div>
+
+          <p class="text-sm -mt-3">
+            Да, да — хватит тратить свое время и ехать в офис ради небольшого
+            диалога.
+          </p>
+
+          <article class="slider__team mt-8">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина2
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина3
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина4
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина5
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина6
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина7
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина8
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина9
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__navigation flex justify-between mt-5">
+              <img
+                src="./public/img/svg/slider__arrow__prev.svg"
+                alt=""
+                class="slider__button__prev"
+              />
+              <div class="slider__pagination__wrapper" style="display: inline">
+                <div class="slider__pagination" style="display: inline"></div>
+              </div>
+
+              <img
+                src="./public/img/svg/slider__arrow__next.svg"
+                alt=""
+                class="slider__button__next"
+              />
+            </div>
+          </article>
+        </section>
+
+        <span class="background__text font-bold -ml-2"
+          ><nobr>Где мы</nobr></span
+        >
+
+        <section class="w-11/12 mx-auto -mt-14">
+          <div class="section__header relative">
+            <h3 class="text-3xl font-bold mb-8">Мы в интернете!</h3>
+          </div>
+
+          <p class="text-sm">
+            Да, да — хватит тратить свое время и ехать в офис ради небольшого
+            диалога.
+          </p>
+          <br />
+          <p class="text-sm">
+            С нами можно побщаться в мессенджерах и в программах удаленного
+            доступа (Skype, Discord, Zoom и другие...)
+          </p>
+        </section>
+        <div class="main__cubes mt-16 relative">
+          <img src="./public/img/svg/main__cubes__photo.svg" alt="" class="absolute -top-11 left-6 animate-pulse">
+          <img src="./public/img/svg/main__cubes__brush.svg" alt="" class="absolute top-2 animate-ping" style="left: 135px;">
+          <img src="./public/img/svg/main__cubes__person.svg" alt="" class="absolute -top-7 animate-bounce" style="left: 218px;">
+          <img src="./public/img/svg/main__cubes.svg" class=""></img>
+        </div>
+
+        <section class="w-11/12 mx-auto -mt-14">
+          <div class="section__header relative">
+            <h3 class="text-4xl font-bold mb-8">Наша команда</h3>
+          </div>
+
+          <p class="text-sm -mt-3">
+            Да, да — хватит тратить свое время и ехать в офис ради небольшого
+            диалога.
+          </p>
+
+          <article class="slider__reviews mt-8">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./public/img/team/polina.png"
+                  alt=""
+                  class="object-cover slider__image"
+                />
+                <div class="mt-4">
+                  <h5 class="flex justify-between font-bold">
+                    Полина
+                    <a href="" class="card__button"
+                      ><img src="./public/img/svg/card__button.svg" alt=""
+                    /></a>
+                  </h5>
+                  <span class="font-medium">Дизайнер</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__navigation flex justify-between mt-5">
+              <img
+                src="./public/img/svg/slider__arrow__prev.svg"
+                alt=""
+                class="slider__button__prev"
+              />
+              <div class="slider__pagination__wrapper" style="display: inline">
+                <div class="slider__pagination" style="display: inline"></div>
+              </div>
+
+              <img
+                src="./public/img/svg/slider__arrow__next.svg"
+                alt=""
+                class="slider__button__next"
+              />
+            </div>
+          </article>
+        </section>
+        
       </main>
     </div>
   </body>

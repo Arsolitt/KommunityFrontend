@@ -46,8 +46,13 @@ body {
   margin: auto;
   position: relative;
   box-sizing: border-box;
-  /* background: #141114; */
-  background: linear-gradient(90deg, #21152D 0.71%, #141114 47.75%, #141114 61.83%, #2D1222 100%); 
+  background: linear-gradient(
+    90deg,
+    #21152d 0.71%,
+    #141114 47.75%,
+    #141114 61.83%,
+    #2d1222 100%
+  );
   background-clip: padding-box;
   border: solid 1px transparent;
   border-radius: 8px;
@@ -95,7 +100,6 @@ body {
     rgba(159, 157, 255, 1),
     rgba(255, 255, 255, 1)
   );
-  /* background-color: rgba(0, 0, 0, 0.1); */
   background-clip: text;
   -webkit-background-clip: text;
 }
