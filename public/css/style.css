@@ -131,6 +131,11 @@ body {
   margin-top: 30%;
 }
 
+#contact-modal {
+  max-width: 414px;
+  margin: 0 auto 0 auto;
+}
+
 .card__img {
   background-repeat: no-repeat;
   background-size: cover;
