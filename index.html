@@ -17,17 +17,26 @@
       src="https://kit.fontawesome.com/523a8fe7f9.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./public/css/tailwind.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
     <link rel="stylesheet" href="./public/css/slider.css" />
 
     <script defer src="./public/js/scroll.js"></script>
+    <script defer src="./public/js/observer.js"></script>
 
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
     <script defer src="./public/js/slider.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"
+    ></script>
 
     <title>Kommunity</title>
   </head>
@@ -35,31 +44,34 @@
   <body class="">
     <div id="app" class="overflow-x-hidden">
       <nav
-        class="flex items-center bg-white rounded-b-2xl h-9 fixed z-50 w-full"
+        class="flex items-center bg-white rounded-b-2xl h-11 fixed z-20 w-full"
       >
         <img src="./public/img/svg/nav__logo.svg" alt="" class="ml-3 mr-5" />
 
-        <ul class="flex text-xs font-medium w-full justify-around">
+        <ul class="flex font-medium w-full justify-around">
           <li class="nav-link">Работы</li>
           <li class="nav-link">Отзывы</li>
           <li class="nav-link">Команда</li>
           <li class="nav-link">Магазин</li>
         </ul>
       </nav>
-      <main class="text-white m-auto pt-20 relative">
+
+      <main class="text-white m-auto pt-24 relative">
         <img
-          src="./public/img/svg/background__ellipse__purple.svg"
+          src="./public/img/svg/glowing/ellipse__1.svg"
           alt=""
-          class="background__ellipse__purple absolute"
+          class="absolute"
+          id="ellipse__1"
         />
         <img
-          src="./public/img/svg/background__ellipse__red.svg"
+          src="./public/img/svg/glowing/ellipse__2.svg"
           alt=""
-          class="background__ellipse__red absolute right-0"
+          class="absolute right-0"
+          id="ellipse__2"
         />
 
         <section class="w-11/12 mx-auto relative">
-          <div class="video__wrapper relative mb-28">
+          <div class="video__wrapper relative mb-36">
             <video
               src="./public/videos/aboba.mp4"
               loop
@@ -68,57 +80,62 @@
             ></video>
             <div class="video__bg absolute top-0 left-0 -z-10"></div>
             <h1
-              class="video__title font-bold text-4xl absolute -mt-4 leading-8"
+              class="video__title font-bold text-5xl absolute -mt-4 leading-12"
             >
               Дизайн, <br />
               продакшн, <br />
               реклама
             </h1>
           </div>
-          <div class="">
-            <p class="mb-8 -mt-3 leading-5">
-              Здесь вы можете создать сайт, заказать фотосет и многое другое ;)
-            </p>
-            <button
-              class="w-full button__gradient__glowing button__gradient font-bold h-10"
-            >
-              Сотворить стилёк
-            </button>
-          </div>
+          <p class="mb-8 leading-5">
+            Здесь вы можете создать сайт, заказать фотосет и многое другое ;)
+          </p>
+          <button
+            class="w-full button__gradient__glowing button__gradient font-bold h-12"
+            data-modal-target="contact-modal"
+            data-modal-toggle="contact-modal"
+            type="button"
+          >
+            Сотворить стилёк
+          </button>
         </section>
+
         <span class="background__text font-bold -ml-2"
           ><nobr>Как это</nobr></span
         >
 
-        <section class="w-11/12 mx-auto -mt-14">
+        <section class="w-11/12 mx-auto -mt-17">
           <div class="w-11/12">
             <div class="section__header relative">
-              <h3 class="text-4xl font-bold mb-8">Как это работает</h3>
+              <h3 class="text-4xl font-bold mb-8">
+                Как это <br />
+                работает?
+              </h3>
             </div>
 
-            <p class="text-sm">
+            <p class="font-medium">
               Вы даёте нам задачу — а мы собираем именно под неё уникальную
               команду креативных специалистов.
             </p>
             <br />
-            <p class="text-sm">
+            <p class="font-medium">
               Все параметры работы подбираются под ваши возможности: время,
               сложность и стоимость.
             </p>
             <br />
-            <h3 class="text-base text-right font-semibold w-11/12">Но!</h3>
+            <h3 class="text-xl text-right font-semibold w-11/12">Но!</h3>
             <br />
             <p>
               Качество креативного продукта остается всегда на высоте — ведь мы
               в Комьюнити любим мутить стилёк ;)
             </p>
             <br />
-            <h3 class="text-base text-right relative font-semibold w-11/12">
+            <h3 class="text-xl text-right relative font-semibold w-11/12">
               Убедись сам
               <img
                 src="./public/img/svg/main__arrow.svg"
                 alt=""
-                class="arrow absolute animate-bounce -mb-8"
+                class="arrow absolute -mb-6 bounced"
               />
             </h3>
             <br />
@@ -209,12 +226,12 @@
           ><nobr>Команда</nobr></span
         >
 
-        <section class="w-11/12 mx-auto -mt-14">
+        <section class="w-11/12 mx-auto -mt-17">
           <div class="section__header relative">
             <h3 class="text-4xl font-bold mb-8">Наша команда</h3>
           </div>
 
-          <p class="text-sm -mt-3">
+          <p class="font-medium -mt-3">
             Да, да — хватит тратить свое время и ехать в офис ради небольшого
             диалога.
           </p>
@@ -375,7 +392,10 @@
               </div>
             </div>
 
-            <div class="slider__team__navigation flex justify-between mt-5">
+            <div
+              class="slider__team__navigation flex justify-between mt-5 relative"
+              style="z-index: 100"
+            >
               <img
                 src="./public/img/svg/slider__arrow__prev.svg"
                 alt=""
@@ -394,6 +414,13 @@
           </article>
         </section>
 
+        <img
+          src="./public/img/svg/glowing/ellipse__3.svg"
+          alt=""
+          class="absolute right-0"
+          id="ellipse__3"
+        />
+
         <span class="background__text font-bold -ml-2"
           ><nobr>Где мы</nobr></span
         >
@@ -402,43 +429,58 @@
           <div class="section__header relative">
             <h3 class="text-3xl font-bold mb-8">Мы в интернете!</h3>
           </div>
-
-          <p class="text-sm">
-            Да, да — хватит тратить свое время и ехать в офис ради небольшого
+          <p class="font-medium">
+            Да, да — хватит тратить свое времяи ехать в офис ради небольшого
             диалога.
           </p>
           <br />
-          <p class="text-sm">
-            С нами можно побщаться в мессенджерах и в программах удаленного
-            доступа (Skype, Discord, Zoom и другие...)
+          <p class="font-medium">
+            С нами можно побщатьсяв мессенджерах и в программахудаленного
+            доступа (Skype, Discord, Zoomи другие...)
           </p>
         </section>
-        <div class="main__cubes mt-16 relative">
+
+        <section class="main__cubes mt-16 relative">
           <img
             src="./public/img/svg/main__cubes__photo.svg"
             alt=""
-            class="absolute -top-11 left-6 animate-pulse"
+            class="absolute bounced"
+            style="left: 9%; top: -32%"
           />
           <img
             src="./public/img/svg/main__cubes__brush.svg"
             alt=""
-            class="absolute top-2 animate-ping"
-            style="left: 135px"
+            class="absolute bounced"
+            style="left: 43%; top: 15%"
           />
           <img
             src="./public/img/svg/main__cubes__person.svg"
             alt=""
-            class="absolute -top-7 animate-bounce"
-            style="left: 218px"
+            class="absolute bounced"
+            style="left: 69%; top: -18%"
           />
           <img src="./public/img/svg/main__cubes.svg" class="" />
-        </div>
+        </section>
 
         <span class="background__text font-bold -ml-2"
           ><nobr>Отзывы</nobr></span
         >
 
-        <section class="w-11/12 mx-auto -mt-14">
+        <img
+          src="./public/img/svg/glowing/ellipse__4.svg"
+          alt=""
+          class="absolute right-0"
+          id="ellipse__4"
+        />
+
+        <img
+        src="./public/img/svg/glowing/ellipse__5.svg"
+        alt=""
+        class="absolute left-0"
+        id="ellipse__5"
+      />
+
+        <section class="w-11/12 mx-auto -mt-17 mb-10">
           <div class="section__header relative">
             <h3 class="text-4xl font-bold mb-8">Отзывы клиентов</h3>
           </div>
@@ -450,24 +492,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -477,24 +518,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -504,24 +544,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -531,24 +570,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -558,24 +596,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -585,24 +622,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -612,24 +648,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -639,24 +674,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -666,24 +700,23 @@
                   <img
                     src="./public/img/reviews/avatar_1.png"
                     alt=""
-                    class="slider__reviews__avatar w-12 h-12 object-cover"
+                    class="slider__reviews__avatar w-16 h-16 object-cover"
                   />
                   <div class="text-right">
-                    <span class="slider__reviews__name font-semibold"
+                    <span class="slider__reviews__name text-lg font-semibold"
                       >Олег Васильевич</span
                     >
-                    <span class="slider__reviews__info text-sm font-medium"
+                    <br />
+                    <span class="slider__reviews__info font-medium"
                       >ООО ClubServiсe</span
                     >
                   </div>
                 </div>
-                <p
-                  class="slider__reviews__text bg-white text-black text-sm p-4 mt-7"
-                >
+                <p class="slider__reviews__text bg-white text-black p-4 mt-7">
                   С ребятами из Комьюнити мы работаем очень давно. Здесь всегда
-                  знают, как сделать крутой стиль для любого мероприятия, а
-                  менеджеры компании всегда помогут собрать сеты.  Мы работаем с
-                  Натальей,  и её самое ценное качество - вовлеченность в
+                  знают, как сделать крутой стиль для любого мероприятия,а
+                  менеджеры компании всегда помогут собрать сеты. Мы работаем с
+                  Натальей, и её самое ценное качество - вовлеченность в
                   процесс.
                 </p>
               </div>
@@ -712,33 +745,121 @@
           ><nobr>Напишите нам</nobr></span
         >
 
-        <section class="w-11/12 mx-auto -mt-14">
+        <section class="w-11/12 mx-auto -mt-17">
           <div class="w-11/12 mb-8">
             <div class="section__header relative">
               <h3 class="text-4xl font-bold mb-8">Напишите нам</h3>
             </div>
 
-            <p class="text-sm font-medium">
+            <p class="font-medium">
               Если захотели <br />
               поработать с нами
             </p>
-            <h3 class="text-base text-right relative font-semibold w-11/12">
-              Убедись сам
+            <h3 class="text-lg text-right relative font-semibold w-11/12">
+              Мы сразу же <br />
+              ответим!
               <img
                 src="./public/img/svg/main__arrow.svg"
                 alt=""
-                class="arrow absolute animate-bounce -mb-8"
+                class="arrow absolute -mb-3 bounced"
               />
             </h3>
           </div>
           <button
             class="w-full button__gradient__solid button__gradient font-bold h-10"
+            data-modal-target="contact-modal"
+            data-modal-toggle="contact-modal"
+            type="button"
           >
             Сотворить стилёк
           </button>
+          <div
+            id="contact-modal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+              <div class="relative rounded-xl p-5 bg-main">
+                <div class="flex justify-between rounded-t mb-8">
+                  <h3 class="text-xl">
+                    Расскажите <br />
+                    о своей задаче
+                  </h3>
+                  <button
+                    type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="contact-modal"
+                  >
+                    <svg
+                      width="19"
+                      height="19"
+                      viewBox="0 0 19 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L18 18M1 18L18 1"
+                        stroke="#C47BB2"
+                        stroke-opacity="0.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <form action="" class="flex flex-col">
+                  <span>Выберите тип работы:</span>
+                  <select
+                    name=""
+                    id=""
+                    class="bg-main p-2 mt-2 mb-8 form__input"
+                    style="outline: none"
+                  >
+                    <option value="">UX/UI-дизайн</option>
+                    <option value="">3D и анимация</option>
+                    <option value="" selected="selected">
+                      Графический дизайн
+                    </option>
+                    <option value="">Иллюстрации и превью</option>
+                    <option value="">Видео-продакшн</option>
+                    <option value="">Выпускные альбомы</option>
+                    <option value="">Фотосессии</option>
+                  </select>
+                  <span>Укажите примерные сроки сдачи:</span>
+                  <select
+                    name=""
+                    id=""
+                    class="bg-main p-2 mt-2 mb-8 form__input"
+                    style="outline: none"
+                  >
+                    <option value="" selected="selected">На этой неделе</option>
+                    <option value="">Вчера</option>
+                  </select>
+                  <span>Расскажите нам подробнее о работе:</span>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    class="bg-main h-24 p-2 mt-2 mb-10 form__input"
+                    style="outline: none"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    class="form__button text-lg font-bold h-12"
+                  >
+                    Отправить заявку
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
 
-          <p class="font-medium text-sm mt-8">
-            По всем вопросам и предложениям можете также связаться с нами через
+          <p class="font-medium mt-8 w-11/12">
+            По всем вопросам и предложениямможете также связаться с намичерез
             удобный для вас мессенджер
           </p>
 
@@ -756,24 +877,31 @@
       </main>
 
       <footer class="text-white mt-12">
-        <h4 class="text-sm font-bold">Оцените нашу последнюю работу:</h4>
+        <h4 class="font-bold mb-4">Оцените нашу последнюю работу:</h4>
         <img
           src="./public/img/footer.jpg"
           alt=""
           class="h-24 w-full object-cover mx-auto"
         />
-        <span class="underline text-xs font-medium"
-          >Название проекта в одну строку</span
-        ><br />
-        <div class="mt-4">
+
+        <a href="">
+          <span
+            class="text-sm font-medium"
+            style="border-bottom: 1px solid white; padding-bottom: 3px"
+            >Название проекта в одну строку</span
+          ></a
+        >
+        <br />
+        <div
+          class="mt-4"
+          style="border-bottom: 1px solid gray; padding-bottom: 20px"
+        >
           <span class="font-bold">Заходите к нам чаще</span><br />
-          <span class="font-bold underline underline-offset-16"
-            >и увидите новые творения ;)</span
-          >
+          <span class="font-bold">и увидите новые творения ;)</span>
         </div>
-        <div class="mt-10 flex justify-between items-center">
-          <span class="font-bold">Комьюнити</span>
-          <span class="text-vxs">@ 2023 Все права защищены</span>
+        <div class="mt-2 flex justify-between items-center">
+          <span class="font-bold text">Комьюнити</span>
+          <span class="font-medium text-sm">@ 2023 Все права защищены</span>
         </div>
       </footer>
     </div>

@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .leading-12 {
+    line-height: 3rem /* -48px */;
+  }
+  .-mt-18 {
+    margin-top: -4.5rem /* -72px */;
+  }
+  .-mt-17 {
+    margin-top: -4.25rem /* -68px */;
+  }
+
+  .card__header {
+    @apply text-xl font-semibold mb-2;
+  }
+
+  .card {
+    @apply mb-10;
+  }
+
+  .underline-offset-16 {
+    text-underline-offset: 16px;
+  }
+
+  .bg-main {
+    background-color: #141114;
+  }
+
+  .bounce {
+    animation: bounce 1s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(20%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}
