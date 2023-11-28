@@ -5,6 +5,10 @@ body {
   font-family: Raleway;
 }
 
+.nav-link:hover {
+  color: #7A02B6;
+}
+
 .video__title {
   -webkit-text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
   -moz-text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);

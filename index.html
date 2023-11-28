@@ -42,17 +42,16 @@
   </head>
 
   <body class="">
-    <div id="app" class="overflow-x-hidden">
+    <div id="app" class="overflow-x-hidden mx-auto" style="max-width: 414px;">
       <nav
-        class="flex items-center bg-white rounded-b-2xl h-11 fixed z-20 w-full"
-      >
+        class="flex items-center bg-white rounded-b-2xl h-11 fixed z-20 w-full" style="max-width: 414px;">
         <img src="./public/img/svg/nav__logo.svg" alt="" class="ml-3 mr-5" />
 
         <ul class="flex font-medium w-full justify-around">
-          <li class="nav-link">Работы</li>
-          <li class="nav-link">Отзывы</li>
-          <li class="nav-link">Команда</li>
-          <li class="nav-link">Магазин</li>
+          <li class="nav-link"><a href="">Работы</a></li>
+          <li class="nav-link"><a href="">Отзывы</a></li>
+          <li class="nav-link"><a href="">Команда</a></li>
+          <li class="nav-link"><a href="">Магазин</a></li>
         </ul>
       </nav>
 
@@ -74,13 +73,14 @@
           <div class="video__wrapper relative mb-36">
             <video
               src="./public/videos/aboba.mp4"
+              autoplay
               loop
               muted
               class="video"
             ></video>
             <div class="video__bg absolute top-0 left-0 -z-10"></div>
             <h1
-              class="video__title font-bold text-5xl absolute -mt-4 leading-12"
+              class="video__title font-bold text-5xl absolute -mt-7 leading-12"
             >
               Дизайн, <br />
               продакшн, <br />

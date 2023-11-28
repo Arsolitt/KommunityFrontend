@@ -728,6 +728,18 @@ video {
   margin-bottom: -1rem;
 }
 
+.-mt-6 {
+  margin-top: -1.5rem;
+}
+
+.-mt-8 {
+  margin-top: -2rem;
+}
+
+.-mt-7 {
+  margin-top: -1.75rem;
+}
+
 .inline {
   display: inline;
 }
