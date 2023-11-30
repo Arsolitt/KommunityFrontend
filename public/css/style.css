@@ -65,7 +65,7 @@ body {
   box-sizing: border-box;
   background-clip: padding-box;
   border: solid 1px transparent;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .button__gradient::before {
@@ -144,13 +144,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: gray;
-  height: 160px;
+  height: 204px;
   border-radius: 12px;
 }
 
 footer {
   background-color: #680064;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 10px 20px;
   border-radius: 20px 20px 0 0;
   text-underline-offset: 6px;
 }
@@ -183,6 +183,22 @@ footer > img {
   border-radius: 8px;
   border: 1px solid #ffa5f6;
   opacity: 0.5;
+}
+
+.bounce {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @-webkit-keyframes AnimateBorder {

@@ -15,9 +15,13 @@
 	width: 54.5%;
 }
 
+.slider__team__slide {
+	max-width: 214px;
+}
+
 .slider__team__image{
 	border-radius: 10px;
-	max-height: 180px;
+	max-height: 214px;
 	width: 100%;
 }
 

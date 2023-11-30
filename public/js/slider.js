@@ -6,11 +6,11 @@ const sliderTeam = new Swiper(".slider__team", {
       return (
         '<span class="' +
         currentClass +
-        '" style="vertical-align: sub;"></span>' +
+        '" style="vertical-align: sub; font-weight: 500;"></span>' +
         `\\` +
         '<span class="' +
         totalClass +
-        '" style="vertical-align: super;"></span>'
+        '" style="vertical-align: super; font-weight: 400;"></span>'
       );
     },
   },
@@ -34,11 +34,11 @@ const sliderReviews = new Swiper(".slider__reviews", {
       return (
         '<span class="' +
         currentClass +
-        '" style="vertical-align: sub;"></span>' +
+        '" style="vertical-align: sub; font-weight: 500;"></span>' +
         `\\` +
         '<span class="' +
         totalClass +
-        '" style="vertical-align: super;"></span>'
+        '" style="vertical-align: super; font-weight: 400;"></span>'
       );
     },
   },
