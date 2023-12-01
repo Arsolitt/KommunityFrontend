@@ -5,7 +5,7 @@ body {
   font-family: Raleway;
 }
 
-.nav__link:hover, .nav__link__active {
+.no-touch .nav__link:hover, .nav__link__active {
     color: #7a02b6;
 }
 
@@ -173,6 +173,7 @@ footer > img {
     #a35aff 110.58%
   );
   box-shadow: 0px 8px 8px 0px rgba(47, 0, 94, 0.1);
+  transition: all 1s ease-in-out;
 }
 
 .form__button:hover {
