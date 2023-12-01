@@ -46,7 +46,7 @@ body {
 }
 
 .button__gradient {
-  background: linear-gradient(91deg, #1E1625 0%, #141114 19.11%, #181418 68.92%, #291321 94.52%);
+  background: linear-gradient(120deg, #241731 0.12%, #141114 33.66%, #141114 67.35%, #431031 99.7%);
   margin: auto;
   position: relative;
   box-sizing: border-box;
