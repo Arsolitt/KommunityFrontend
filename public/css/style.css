@@ -46,13 +46,7 @@ body {
 }
 
 .button__gradient {
-  background: linear-gradient(
-    90deg,
-    #21152d 0.71%,
-    #141114 47.75%,
-    #141114 61.83%,
-    #2d1222 100%
-  );
+  background: linear-gradient(91deg, #1E1625 0%, #141114 19.11%, #181418 68.92%, #291321 94.52%);
   margin: auto;
   position: relative;
   box-sizing: border-box;
@@ -113,11 +107,11 @@ body {
 }
 
 #ellipse__1 {
-  margin-top: 25%;
+  margin-top: 40%;
 }
 
 #ellipse__2 {
-  margin-top: 50%;
+  margin-top: 70%;
 }
 
 #ellipse__3 {
@@ -252,7 +246,7 @@ footer > img {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 370px) {
  .nav__link {
   font-size: 14px;
  }

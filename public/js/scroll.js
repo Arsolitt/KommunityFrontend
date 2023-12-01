@@ -24,5 +24,5 @@ function changeBgHeaderOpacity() {
 }
 
 function bgHeaderStroke(bgHeader, opacity) {
-  return (bgHeader.style.WebkitTextStroke = `1px rgba(43, 25, 64, ${opacity})`);
+  return (bgHeader.style.WebkitTextStroke = `2px rgba(43, 25, 64, ${opacity})`);
 }
