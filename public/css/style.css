@@ -304,7 +304,7 @@ footer > img {
   }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 400px) {
   .nav__link {
     font-size: 16px;
   }
