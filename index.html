@@ -42,14 +42,14 @@
   </head>
 
   <body class="">
-    <div id="app" class="overflow-x-hidden mx-auto" style="max-width: 414px;">
+    <div id="app" class="overflow-x-hidden mx-auto" style="max-width: 414px">
       <nav
-        class="flex items-center bg-white rounded-b-2xl h-11 fixed z-20 w-full pl-6 pr-6"
+        class="flex items-center bg-white rounded-b-2xl h-11 fixed z-20 w-full pl-6 pr-5"
         style="max-width: 414px"
       >
         <img src="./public/img/svg/nav__logo.svg" alt="" class="mr-12" />
 
-        <ul class="flex font-medium w-full justify-around">
+        <ul class="flex font-medium w-full justify-between">
           <li class="nav-link"><a href="">Работы</a></li>
           <li class="nav-link"><a href="">Отзывы</a></li>
           <li class="nav-link"><a href="">Команда</a></li>
@@ -57,7 +57,7 @@
         </ul>
       </nav>
 
-      <main class="text-white m-auto pt-28 relative">
+      <main class="text-white m-auto pt-26 relative">
         <img
           src="./public/img/svg/glowing/ellipse__1.svg"
           alt=""
@@ -90,12 +90,12 @@
               реклама
             </h1>
           </div>
-          <p class="mb-12 leading-5 text-xl font-medium">
+          <p class="mb-14 leading-5 text-xl font-medium">
             Здесь вы можете создать сайт, <br />
             заказать фотосет и многое другое ;)
           </p>
           <button
-            class="w-full button__gradient__glowing button__gradient font-bold h-12"
+            class="w-full button__gradient font-bold h-12"
             data-modal-target="contact-modal"
             data-modal-toggle="contact-modal"
             type="button"
@@ -119,7 +119,7 @@
 
             <p class="font-medium">
               Вы даёте нам задачу — а мы собираем <br />
-              именно под неё уникальную команду <br />
+              под неё уникальную команду <br />
               креативных специалистов.
             </p>
             <br />
@@ -131,7 +131,7 @@
             <br />
             <h3 class="text-xl text-right font-semibold w-11/12">Но!</h3>
             <br />
-            <p>
+            <p class="font-medium">
               Качество креативного продукта <br />
               остается всегда на высоте — <br />
               ведь мы в Комьюнити любим <br />
@@ -143,7 +143,7 @@
               <img
                 src="./public/img/svg/main__arrow.svg"
                 alt=""
-                class="arrow absolute -mb-6 bounced"
+                class="arrow absolute -mb-6 arrow__bounced"
               />
             </h3>
             <br />
@@ -153,79 +153,128 @@
         <section class="w-11/12 mx-auto mt-5">
           <div class="card">
             <h4 class="card__header">UX/UI-дизайн</h4>
-            <div
-              class="card__img relative"
-              style="background-image: url('./public/img/card_1.png')"
-            >
-              <a href="" class="card__button absolute bottom-2 right-2">
-                <img src="./public/img/svg/card__button.svg" alt="" />
+
+            <div class="relative">
+              <a href="">
+                <img
+                  src="./public/img/card_1.png"
+                  alt="КАРТИНКУ УКРАЛИ"
+                  class="card__img"
+                />
+                <a href=""
+                  ><img
+                    src="./public/img/svg/card__button.svg"
+                    alt=""
+                    class="card__button absolute bottom-2 right-2"
+                /></a>
               </a>
             </div>
           </div>
           <div class="card">
             <h4 class="card__header">3D и анимация</h4>
-            <div
-              class="card__img relative"
-              style="background-image: url('./public/img/card_2.png')"
-            >
-              <a href="" class="card__button absolute bottom-2 right-2">
-                <img src="./public/img/svg/card__button.svg" alt="" />
+            <div class="relative">
+              <a href="">
+                <img
+                  src="./public/img/card_2.png"
+                  alt="КАРТИНКУ УКРАЛИ"
+                  class="card__img"
+                />
+                <a href=""
+                  ><img
+                    src="./public/img/svg/card__button.svg"
+                    alt=""
+                    class="card__button absolute bottom-2 right-2"
+                /></a>
               </a>
             </div>
           </div>
           <div class="card">
             <h4 class="card__header">Графический дизайн</h4>
-            <div
-              class="card__img relative"
-              style="background-image: url('./public/img/card_3.png')"
-            >
-              <a href="" class="card__button absolute bottom-2 right-2"
-                ><img src="./public/img/svg/card__button.svg" alt=""
-              /></a>
+            <div class="relative">
+              <a href="">
+                <img
+                  src="./public/img/card_3.png"
+                  alt="КАРТИНКУ УКРАЛИ"
+                  class="card__img"
+                />
+                <a href=""
+                  ><img
+                    src="./public/img/svg/card__button.svg"
+                    alt=""
+                    class="card__button absolute bottom-2 right-2"
+                /></a>
+              </a>
             </div>
           </div>
           <div class="card">
-            <h4 class="card__header">Иллюстрации и превью</h4>
-            <div
-              class="card__img relative"
-              style="background-image: url('./public/img/card_4.png')"
-            >
-              <a href="" class="card__button absolute bottom-2 right-2"
-                ><img src="./public/img/svg/card__button.svg" alt=""
-              /></a>
+            <div class="relative">
+              <a href="">
+                <img
+                  src="./public/img/card_4.png"
+                  alt="КАРТИНКУ УКРАЛИ"
+                  class="card__img"
+                />
+                <a href=""
+                  ><img
+                    src="./public/img/svg/card__button.svg"
+                    alt=""
+                    class="card__button absolute bottom-2 right-2"
+                /></a>
+              </a>
             </div>
           </div>
           <div class="card">
             <h4 class="card__header">Видео-продакшн</h4>
-            <div
-              class="card__img relative"
-              style="background-image: url('./public/img/card_5.png')"
-            >
-              <a href="" class="card__button absolute bottom-2 right-2"
-                ><img src="./public/img/svg/card__button.svg" alt=""
-              /></a>
+            <div class="relative">
+              <a href="">
+                <img
+                  src="./public/img/card_5.png"
+                  alt="КАРТИНКУ УКРАЛИ"
+                  class="card__img"
+                />
+                <a href=""
+                  ><img
+                    src="./public/img/svg/card__button.svg"
+                    alt=""
+                    class="card__button absolute bottom-2 right-2"
+                /></a>
+              </a>
             </div>
           </div>
           <div class="card">
             <h4 class="card__header">Выпускные альбомы</h4>
-            <div
-              class="card__img relative"
-              style="background-image: url('./public/img/card_6.png')"
-            >
-              <a href="" class="card__button absolute bottom-2 right-2"
-                ><img src="./public/img/svg/card__button.svg" alt=""
-              /></a>
+            <div class="relative">
+              <a href="">
+                <img
+                  src="./public/img/card_6.png"
+                  alt="КАРТИНКУ УКРАЛИ"
+                  class="card__img"
+                />
+                <a href=""
+                  ><img
+                    src="./public/img/svg/card__button.svg"
+                    alt=""
+                    class="card__button absolute bottom-2 right-2"
+                /></a>
+              </a>
             </div>
           </div>
           <div class="card">
             <h4 class="card__header">Фотосессии</h4>
-            <div
-              class="card__img relative"
-              style="background-image: url('./public/img/card_7.png')"
-            >
-              <a href="" class="card__button absolute bottom-2 right-2"
-                ><img src="./public/img/svg/card__button.svg" alt=""
-              /></a>
+            <div class="relative">
+              <a href="">
+                <img
+                  src="./public/img/card_7.png"
+                  alt="КАРТИНКУ УКРАЛИ"
+                  class="card__img"
+                />
+                <a href=""
+                  ><img
+                    src="./public/img/svg/card__button.svg"
+                    alt=""
+                    class="card__button absolute bottom-2 right-2"
+                /></a>
+              </a>
             </div>
           </div>
         </section>
@@ -455,19 +504,19 @@
           <img
             src="./public/img/svg/main__cubes__photo.svg"
             alt=""
-            class="absolute bounced"
+            class="absolute drop__bounced"
             style="left: 9%; top: -32%"
           />
           <img
             src="./public/img/svg/main__cubes__brush.svg"
             alt=""
-            class="absolute bounced"
+            class="absolute drop__bounced"
             style="left: 43%; top: 15%"
           />
           <img
             src="./public/img/svg/main__cubes__person.svg"
             alt=""
-            class="absolute bounced"
+            class="absolute drop__bounced"
             style="left: 69%; top: -18%"
           />
           <img src="./public/img/svg/main__cubes.svg" class="" />
@@ -759,7 +808,7 @@
         >
 
         <section class="w-11/12 mx-auto -mt-18">
-          <div class="w-11/12 mb-8">
+          <div class="w-11/12 mb-12">
             <div class="section__header relative">
               <h3 class="text-4xl font-bold mb-8">Напишите нам</h3>
             </div>
@@ -774,109 +823,57 @@
               <img
                 src="./public/img/svg/main__arrow.svg"
                 alt=""
-                class="arrow absolute -mb-3 bounced"
+                class="arrow absolute -mb-3 arrow__bounced"
               />
             </h3>
           </div>
-          <button
-            class="w-full button__gradient__solid button__gradient font-bold h-10"
-            data-modal-target="contact-modal"
-            data-modal-toggle="contact-modal"
-            type="button"
-          >
-            Сотворить стилёк
-          </button>
-          <div
-            id="contact-modal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-[calc(100%-1rem)] max-h-full"
-          >
-            <div class="relative p-4 w-full max-w-2xl max-h-full">
-              <div class="relative rounded-xl p-5 bg-main">
-                <div class="flex justify-between rounded-t mb-8">
-                  <h3 class="text-xl">
-                    Расскажите <br />
-                    о своей задаче
-                  </h3>
-                  <button
-                    type="button"
-                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                    data-modal-hide="contact-modal"
-                  >
-                    <svg
-                      width="19"
-                      height="19"
-                      viewBox="0 0 19 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1L18 18M1 18L18 1"
-                        stroke="#C47BB2"
-                        stroke-opacity="0.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <form action="" class="flex flex-col">
-                  <span>Выберите тип работы:</span>
-                  <select
-                    name=""
-                    id=""
-                    class="bg-main p-2 mt-2 mb-8 form__input"
-                    style="outline: none"
-                  >
-                    <option value="">UX/UI-дизайн</option>
-                    <option value="">3D и анимация</option>
-                    <option value="" selected="selected">
-                      Графический дизайн
-                    </option>
-                    <option value="">Иллюстрации и превью</option>
-                    <option value="">Видео-продакшн</option>
-                    <option value="">Выпускные альбомы</option>
-                    <option value="">Фотосессии</option>
-                  </select>
-                  <span>Укажите примерные сроки сдачи:</span>
-                  <select
-                    name=""
-                    id=""
-                    class="bg-main p-2 mt-2 mb-8 form__input"
-                    style="outline: none"
-                  >
-                    <option value="" selected="selected">На этой неделе</option>
-                    <option value="">Вчера</option>
-                  </select>
-                  <span>Расскажите нам подробнее о работе:</span>
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="10"
-                    class="bg-main h-24 p-2 mt-2 mb-10 form__input"
-                    style="outline: none"
-                  ></textarea>
-                  <button
-                    type="submit"
-                    class="form__button text-lg font-bold h-12"
-                  >
-                    Отправить заявку
-                  </button>
-                </form>
-              </div>
-            </div>
+          <div class="mt-10">
+            <form action="" class="flex flex-col">
+              <span>Выберите тип работы:</span>
+              <select
+                name=""
+                id=""
+                class="bg-main p-2 mt-2 mb-8 form__input"
+                style="outline: none"
+              >
+                <option value="">UX/UI-дизайн</option>
+                <option value="">3D и анимация</option>
+                <option value="" selected="selected">Графический дизайн</option>
+                <option value="">Иллюстрации и превью</option>
+                <option value="">Видео-продакшн</option>
+                <option value="">Выпускные альбомы</option>
+                <option value="">Фотосессии</option>
+              </select>
+              <span>Уточните, как с вами связаться:</span>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="bg-main p-2 mt-2 mb-8 form__input"
+                placeholder="Телефон или любой удобный мессенджер"
+              />
+              <span>Расскажите нам подробнее о работе:</span>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="bg-main h-24 p-2 mt-2 mb-12 form__input"
+                style="outline: none"
+              ></textarea>
+              <button type="submit" class="form__button text-lg font-bold h-12">
+                Отправить заявку
+              </button>
+            </form>
           </div>
 
-          <p class="font-medium mt-8 w-11/12">
-            По всем вопросам и предложениям <br> можете также связаться с нами через <br>
+          <p class="font-medium mt-14 w-11/12">
+            По всем вопросам и предложениям <br />
+            можете также связаться с нами через <br />
             удобный для вас мессенджер
           </p>
 
-          <div class="contacts flex items-center justify-between w-8/12 mt-8">
+          <div class="contacts flex items-center justify-between w-8/12 mt-6">
             <a href=""><img src="./public/img/svg/main__vk.svg" alt="" /></a>
             <a href=""
               ><img src="./public/img/svg/main__telegram.svg" alt=""
@@ -889,13 +886,15 @@
         </section>
       </main>
 
-      <footer class="text-white mt-16">
+      <footer class="text-white mt-18">
         <h4 class="font-bold mb-4">Оцените нашу последнюю работу:</h4>
-        <img
-          src="./public/img/footer.jpg"
-          alt=""
-          class="h-24 w-full object-cover mx-auto mb-2"
-        />
+        <a href="">
+          <img
+            src="./public/img/footer.jpg"
+            alt=""
+            class="h-24 w-full object-cover mx-auto mb-2"
+          />
+        </a>
 
         <a href="">
           <span
@@ -917,6 +916,84 @@
           <span class="font-medium text-sm">@ 2023 Все права защищены</span>
         </div>
       </footer>
+    </div>
+
+    <div
+      id="contact-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-[calc(100%-1rem)] max-h-full text-white"
+    >
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <div class="relative rounded-xl p-5 bg-main">
+          <div class="flex justify-between rounded-t mb-8">
+            <h3 class="text-xl">
+              Расскажите <br />
+              о своей задаче
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="contact-modal"
+            >
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L18 18M1 18L18 1"
+                  stroke="#C47BB2"
+                  stroke-opacity="0.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <form action="" class="flex flex-col">
+            <span>Выберите тип работы:</span>
+            <select
+              name=""
+              id=""
+              class="bg-main p-2 mt-2 mb-8 form__input"
+              style="outline: none"
+            >
+              <option value="">UX/UI-дизайн</option>
+              <option value="">3D и анимация</option>
+              <option value="" selected="selected">Графический дизайн</option>
+              <option value="">Иллюстрации и превью</option>
+              <option value="">Видео-продакшн</option>
+              <option value="">Выпускные альбомы</option>
+              <option value="">Фотосессии</option>
+            </select>
+            <span>Уточните, как с вами связаться:</span>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="bg-main p-2 mt-2 mb-8 form__input"
+              placeholder="Телефон или любой удобный мессенджер"
+            />
+
+            <span>Расскажите нам подробнее о работе:</span>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="bg-main h-24 p-2 mt-2 mb-10 form__input"
+              style="outline: none"
+            ></textarea>
+            <button type="submit" class="form__button text-lg font-bold h-12">
+              Отправить заявку
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

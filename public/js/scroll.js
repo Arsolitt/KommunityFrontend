@@ -12,9 +12,9 @@ function changeBgHeaderOpacity() {
     const bgHeaderHeight = bgHeader.offsetHeight;
     const bgHeaderOffset =
       bgHeader.getBoundingClientRect().top + window.scrollY;
-    const currentScrollY = window.scrollY + bgHeaderHeight + 100;
+    const currentScrollY = window.scrollY + bgHeaderHeight + 200;
     if (
-      window.scrollY + bgHeaderHeight + 150 >= bgHeaderOffset &&
+      currentScrollY >= bgHeaderOffset &&
       currentScrollY <= bgHeaderOffset + bgHeaderHeight
     ) {
       const opacity = 1 - (currentScrollY - bgHeaderOffset) / bgHeaderHeight;

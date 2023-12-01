@@ -6,7 +6,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #7A02B6;
+  color: #7a02b6;
 }
 
 .video__title {
@@ -45,11 +45,7 @@ body {
   transition: filter 0.4s ease-in;
 }
 
-.button__gradient__solid {
-  background: #141114;
-}
-
-.button__gradient__glowing {
+.button__gradient {
   background: linear-gradient(
     90deg,
     #21152d 0.71%,
@@ -57,9 +53,6 @@ body {
     #141114 61.83%,
     #2d1222 100%
   );
-}
-
-.button__gradient {
   margin: auto;
   position: relative;
   box-sizing: border-box;
@@ -116,7 +109,7 @@ body {
 
 .arrow {
   right: -1.75rem;
-  bottom: 0.2rem;
+  bottom: -0.5rem;
 }
 
 #ellipse__1 {
@@ -138,13 +131,20 @@ body {
 #contact-modal {
   max-width: 414px;
   margin: 0 auto 0 auto;
+  animation: modal__show 1s;
 }
 
+@keyframes modal__show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .card__img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: gray;
   height: 204px;
+  width: 100%;
   border-radius: 12px;
 }
 
@@ -166,7 +166,7 @@ footer > img {
 .form__button {
   border-radius: 12px;
   background: linear-gradient(
-    to right,
+    273deg,
     #b8eaff -26.39%,
     #ebc2e2 -2.55%,
     #ffa5f6 15.07%,
@@ -185,11 +185,27 @@ footer > img {
   opacity: 0.5;
 }
 
-.bounce {
-  animation: bounce 1s;
+.arrow__bounce {
+  animation: arrow__bounce 1.5s;
 }
 
-@keyframes bounce {
+@keyframes arrow__bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.drop__bounce {
+  animation: drop__bounce 1s;
+}
+
+@keyframes drop__bounce {
   0% {
     transform: translateY(0%);
   }

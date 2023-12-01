@@ -13,6 +13,9 @@
   .-mt-18 {
     margin-top: -4.5rem /* -72px */;
   }
+  .mt-18 {
+    margin-top: 4.5rem /* 72px */;
+  }
   .-mt-17 {
     margin-top: -4.25rem /* -68px */;
   }
@@ -39,5 +42,9 @@
 
   .-mt-6\.5 {
     margin-top: -1.625rem/* -26px */;
+  }
+
+  .pt-26 {
+    padding-top: 6.5rem/* 104px*/;
   }
 }

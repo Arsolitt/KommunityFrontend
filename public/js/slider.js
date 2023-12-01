@@ -6,11 +6,11 @@ const sliderTeam = new Swiper(".slider__team", {
       return (
         '<span class="' +
         currentClass +
-        '" style="vertical-align: sub; font-weight: 500;"></span>' +
+        '" style="vertical-align: sub; font-weight: 600; font-size: 16px"></span>' +
         `\\` +
         '<span class="' +
         totalClass +
-        '" style="vertical-align: super; font-weight: 400;"></span>'
+        '" style="vertical-align: super; font-weight: 400; font-size: 14px"></span>'
       );
     },
   },
@@ -23,7 +23,7 @@ const sliderTeam = new Swiper(".slider__team", {
   watchOverflow: true,
   slidesPerGroup: 1,
   loop: true,
-  speed: 700,
+  speed: 600,
 });
 
 const sliderReviews = new Swiper(".slider__reviews", {
@@ -34,11 +34,11 @@ const sliderReviews = new Swiper(".slider__reviews", {
       return (
         '<span class="' +
         currentClass +
-        '" style="vertical-align: sub; font-weight: 500;"></span>' +
+        '" style="vertical-align: sub; font-weight: 600; font-size: 16px"></span>' +
         `\\` +
         '<span class="' +
         totalClass +
-        '" style="vertical-align: super; font-weight: 400;"></span>'
+        '" style="vertical-align: super; font-weight: 400; font-size: 14px"></span>'
       );
     },
   },
@@ -51,5 +51,5 @@ const sliderReviews = new Swiper(".slider__reviews", {
   watchOverflow: true,
   slidesPerGroup: 1,
   loop: true,
-  speed: 700,
+  speed: 600,
 });
