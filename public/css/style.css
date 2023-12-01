@@ -251,3 +251,9 @@ footer > img {
     background-position: 0% 50%;
   }
 }
+
+@media (max-width: 390px) {
+ .nav__link {
+  font-size: 14px;
+ }
+}
