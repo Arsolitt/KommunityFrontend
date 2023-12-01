@@ -5,8 +5,8 @@ body {
   font-family: Raleway;
 }
 
-.nav-link:hover {
-  color: #7a02b6;
+.nav__link:hover, .nav__link__active {
+    color: #7a02b6;
 }
 
 .video__title {
