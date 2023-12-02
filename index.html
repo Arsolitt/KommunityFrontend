@@ -37,6 +37,7 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"
     ></script>
+    <script defer src="./public/js/script.js"></script>
 
     <title>Kommunity</title>
   </head>
@@ -127,7 +128,8 @@
             </p>
             <br />
             <p class="font-medium section__paragraph">
-              Все параметры работы подбираются <br> под ваш запрос: время, сложность <br> 
+              Все параметры работы подбираются <br />
+              под ваш запрос: время, сложность <br />
               и стоимость.
             </p>
             <br />
@@ -291,7 +293,9 @@
           </div>
 
           <p class="font-medium -mt-3 section__paragraph">
-            Знакомьтесь! Эти ребята создают <br> стильные и креативные визуальные <br> решения: 
+            Знакомьтесь! Эти ребята создают <br />
+            стильные и креативные визуальные <br />
+            решения:
           </p>
 
           <article class="slider__team mt-8">
@@ -845,7 +849,7 @@
             </h3>
           </div>
           <div class="mt-10">
-            <form action="" class="flex flex-col">
+            <form action="" class="flex flex-col contact-form">
               <span>Выберите тип работы:</span>
               <select
                 name=""
@@ -878,7 +882,12 @@
                 class="bg-main h-24 p-2 mt-2 mb-12 form__input"
                 style="outline: none"
               ></textarea>
-              <button type="submit" class="form__button text-lg font-bold h-12">
+              <button
+                data-modal-target="accept-modal"
+                data-modal-toggle="accept-modal"
+                type="submit"
+                class="form__button text-lg font-bold h-12"
+              >
                 Отправить заявку
               </button>
             </form>
@@ -939,7 +948,7 @@
       id="contact-modal"
       tabindex="-1"
       aria-hidden="true"
-      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-[calc(100%-1rem)] max-h-full text-white"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-[calc(100%-1rem)] max-h-full text-white modal"
     >
       <div class="relative p-4 w-full max-w-2xl max-h-full">
         <div class="relative rounded-xl p-5 bg-main">
@@ -971,7 +980,7 @@
               <span class="sr-only">Close modal</span>
             </button>
           </div>
-          <form action="" class="flex flex-col">
+          <form action="" class="flex flex-col contact-form">
             <span>Выберите тип работы:</span>
             <select
               name=""
@@ -1005,10 +1014,58 @@
               class="bg-main h-24 p-2 mt-2 mb-10 form__input"
               style="outline: none"
             ></textarea>
-            <button type="submit" class="form__button text-lg font-bold h-12">
+            <button
+              data-modal-target="accept-modal"
+              data-modal-toggle="accept-modal"
+              type="submit"
+              class="form__button text-lg font-bold h-12"
+            >
               Отправить заявку
             </button>
           </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------------- -->
+
+    <div
+      id="accept-modal"
+      tabindex="-1"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full text-white modal"
+    >
+      <div class="relative w-full max-w-md max-h-full">
+        <div class="relative rounded-xl shadow pt-5 px-5 bg-main">
+          <h3 class="text-xl font-bold">Спасибо за Вашу заявку!</h3>
+          <button
+            type="button"
+            class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="accept-modal"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <div class="mt-2.5">
+            <span class="font-medium">
+              В ближайшее время с Вами <br />
+              свяжутся наши специалисты
+            </span>
+            <img src="./public/img/svg/pig.svg" alt="" />
+          </div>
         </div>
       </div>
     </div>

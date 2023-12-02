@@ -129,7 +129,7 @@ body {
   margin-top: 30%;
 }
 
-#contact-modal {
+.modal {
   max-width: 414px;
   margin: 0 auto 0 auto;
   animation: modal__show 0.7s;
