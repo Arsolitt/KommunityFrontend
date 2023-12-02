@@ -25,9 +25,6 @@ const arrowsObserver = new IntersectionObserver(
       }
       entry.target.classList.remove("arrow__bounce");
     });
-  },
-  {
-    threshold: 1,
   }
 );
 
