@@ -149,6 +149,14 @@ body {
   border-radius: 12px;
 }
 
+.card__button {
+  border-radius: 8px;
+}
+
+.card__button:hover {
+  background-color: #7A02B6;
+}
+
 footer {
   background-color: #680064;
   padding: 20px 20px 10px 20px;
@@ -188,7 +196,7 @@ footer > img {
 }
 
 .arrow__bounce {
-  animation: arrow__bounce 1.5s;
+  animation: arrow__bounce 1s;
 }
 
 @keyframes arrow__bounce {
@@ -196,7 +204,7 @@ footer > img {
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(30%);
+    transform: translateY(25%);
   }
   100% {
     transform: translateY(0%);
@@ -302,6 +310,9 @@ footer > img {
   .background__text {
     font-size: 115px;
   }
+  button {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 400px) {
@@ -322,5 +333,8 @@ footer > img {
 
   .background__text {
     font-size: 130px;
+  }
+  button {
+    font-size: 18px;
   }
 }

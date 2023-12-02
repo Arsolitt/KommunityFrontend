@@ -694,10 +694,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mr-12 {
-  margin-right: 3rem;
-}
-
 .ms-auto {
   margin-inline-start: auto;
 }
@@ -934,6 +930,10 @@ video {
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .tracking-tighter {
