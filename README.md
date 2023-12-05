@@ -1,10 +1,7 @@
-# KommunityFrontend
+# Vue 3 + Vite
 
-Репа с фронтом для студии дизайна Kommunity
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-- [x] Вёрстка из говна и палок на теилвинде
-- [ ] Рефакторинг
-- [ ] ???Дизайнер сделает ПК версию???
-- [ ] Переезд на Vue
-  
-  ![Alt text](./README/image.png)
+## Recommended IDE Setup
+
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
