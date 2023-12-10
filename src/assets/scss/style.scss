@@ -1,0 +1,18 @@
+@import 'reset-css';
+
+body {
+	background-color: #141114;
+}
+
+#app {
+	font-weight: 500;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-feature-settings:
+		'clig' off,
+		'liga' off;
+	font-family: Raleway, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
