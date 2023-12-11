@@ -1,6 +1,7 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue';
 import BaseContainer from '@/components/BaseContainer.vue';
+import TheWelcomeSection from '@/components/TheWelcomeSection.vue';
 
 if (
 	!(
@@ -14,7 +15,9 @@ if (
 
 <template>
 	<TheNavbar />
-	<BaseContainer></BaseContainer>
+	<BaseContainer>
+		<TheWelcomeSection />
+	</BaseContainer>
 </template>
 
 <style lang="scss" scoped></style>
