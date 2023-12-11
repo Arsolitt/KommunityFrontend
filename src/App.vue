@@ -1,6 +1,6 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue';
-import TheContainer from '@/components/TheContainer.vue';
+import BaseContainer from '@/components/BaseContainer.vue';
 
 if (
 	!(
@@ -9,14 +9,12 @@ if (
 	)
 ) {
 	document.body.classList.add('no-touch');
-	console.log('ABOBA');
 }
 </script>
 
 <template>
-	<TheContainer>
-		<TheNavbar />
-	</TheContainer>
+	<TheNavbar />
+	<BaseContainer></BaseContainer>
 </template>
 
 <style lang="scss" scoped></style>

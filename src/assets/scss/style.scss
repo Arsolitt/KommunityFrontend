@@ -1,4 +1,9 @@
-@import 'reset-css';
+@import 'reset-css/sass/reset';
+
+* {
+	text-decoration: none;
+	box-sizing: border-box;
+}
 
 body {
 	background-color: #141114;
@@ -11,8 +16,4 @@ body {
 		'clig' off,
 		'liga' off;
 	font-family: Raleway, sans-serif;
-}
-
-a {
-	text-decoration: none;
 }

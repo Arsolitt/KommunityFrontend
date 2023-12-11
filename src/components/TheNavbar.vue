@@ -18,6 +18,8 @@
 nav {
 	background-color: #fff;
 	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -38,14 +40,32 @@ nav {
 	justify-content: space-between;
 	width: 100%;
 	margin-right: 10px;
-	&__item {
-	}
 	.item__link {
 		font-size: 14px;
 		color: black;
 		&_active,
 		.no-touch &:hover {
 			color: #7a02b6;
+		}
+	}
+}
+@media screen and (min-width: 360px) {
+	.menu {
+		.item__link {
+			font-size: 15px;
+		}
+	}
+}
+
+@media screen and (min-width: 410px) {
+	.logo {
+		margin-left: 24px;
+		margin-right: 48px;
+	}
+	.menu {
+		margin-right: 18px;
+		.item__link {
+			font-size: 16px;
 		}
 	}
 }
