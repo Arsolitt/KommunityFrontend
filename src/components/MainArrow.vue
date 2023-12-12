@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
-const arrow = ref(null);
+const element = ref(null);
 
 const observer = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
@@ -14,14 +14,14 @@ const observer = new IntersectionObserver(entries => {
 });
 
 onMounted(() => {
-	// console.log(arrow.value);
-	observer.observe(arrow.value);
+	const arrow = element.value;
+	observer.observe(arrow);
 });
 </script>
 
 <template>
 	<img
-		ref="arrow"
+		ref="element"
 		alt=""
 		class="main-arrow"
 		src="@/assets/svg/main-arrow.svg" />
