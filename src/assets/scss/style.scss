@@ -1,13 +1,11 @@
-@import 'reset-css/sass/reset';
+@import 'reset.css';
 
 * {
-	text-decoration: none;
-	box-sizing: border-box;
 	color: #ffffff;
 }
 
 body {
-	background-color: #141114;
+	background-color: $main-bg;
 }
 
 #app {

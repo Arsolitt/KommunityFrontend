@@ -26,6 +26,10 @@ nav {
 	padding: 9px 0;
 	border-bottom-left-radius: 18px;
 	border-bottom-right-radius: 18px;
+	position: fixed;
+	z-index: 5;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .logo {
 	display: inline;
