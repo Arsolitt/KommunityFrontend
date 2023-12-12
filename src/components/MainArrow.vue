@@ -1,9 +1,29 @@
-<script setup></script>
+<script setup>
+import { onMounted, ref } from 'vue';
+
+const arrow = ref(null);
+
+const observer = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('main-arrow_bounce');
+			return;
+		}
+		entry.target.classList.remove('main-arrow_bounce');
+	});
+});
+
+onMounted(() => {
+	// console.log(arrow.value);
+	observer.observe(arrow.value);
+});
+</script>
 
 <template>
 	<img
+		ref="arrow"
 		alt=""
-		class="main-arrow main-arrow_bounce"
+		class="main-arrow"
 		src="@/assets/svg/main-arrow.svg" />
 </template>
 
