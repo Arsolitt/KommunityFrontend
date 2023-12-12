@@ -2,10 +2,11 @@
 
 * {
 	color: #ffffff;
+	box-sizing: border-box;
 }
 
 body {
-	background-color: $main-bg;
+	background-color: $main-dark;
 }
 
 #app {
@@ -15,4 +16,5 @@ body {
 		'clig' off,
 		'liga' off;
 	font-family: Raleway, sans-serif;
+	overflow-x: hidden;
 }
