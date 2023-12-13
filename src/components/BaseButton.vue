@@ -77,6 +77,6 @@ button {
 }
 
 .solid {
-	background-color: $button-solid;
+	background-color: $main-solid;
 }
 </style>

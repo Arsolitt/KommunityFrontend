@@ -5,6 +5,7 @@ import BaseContainer from '@/components/BaseContainer.vue';
 import WelcomeSection from '@/components/WelcomeSection.vue';
 import BackgroundHeader from '@/components/BackgroundHeader.vue';
 import AboutSection from '@/components/AboutSection.vue';
+import ServicesSection from '@/components/ServicesSection.vue';
 
 onMounted(() => {
 	if (
@@ -28,6 +29,7 @@ onMounted(() => {
 
 	<BaseContainer>
 		<AboutSection />
+		<ServicesSection />
 	</BaseContainer>
 </template>
 

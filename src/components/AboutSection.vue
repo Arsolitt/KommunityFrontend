@@ -40,6 +40,8 @@ import MainArrow from '@/components/MainArrow.vue';
 	</section>
 </template>
 
+<!--TODO: REFACTOR THIS STYLES-->
+
 <style lang="scss" scoped>
 section {
 	margin-top: -47px;
