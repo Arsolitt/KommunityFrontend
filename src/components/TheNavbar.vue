@@ -18,7 +18,6 @@
 nav {
 	background-color: #fff;
 	width: 100%;
-	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -30,6 +29,7 @@ nav {
 	z-index: 5;
 	left: 50%;
 	transform: translateX(-50%);
+	height: 44px;
 }
 .logo {
 	display: inline;

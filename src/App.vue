@@ -1,7 +1,6 @@
 <script setup>
 import { onMounted } from 'vue';
 import TheNavbar from '@/components/TheNavbar.vue';
-import BaseContainer from '@/components/BaseContainer.vue';
 import WelcomeSection from '@/components/WelcomeSection.vue';
 import BackgroundHeader from '@/components/BackgroundHeader.vue';
 import AboutSection from '@/components/AboutSection.vue';
@@ -21,16 +20,10 @@ onMounted(() => {
 
 <template>
 	<TheNavbar />
-	<BaseContainer>
-		<WelcomeSection />
-	</BaseContainer>
-
-	<BackgroundHeader>Как это</BackgroundHeader>
-
-	<BaseContainer>
-		<AboutSection />
-		<ServicesSection />
-	</BaseContainer>
+	<WelcomeSection />
+	<BackgroundHeader>Как это работает?</BackgroundHeader>
+	<AboutSection />
+	<ServicesSection />
 </template>
 
 <style lang="scss" scoped></style>

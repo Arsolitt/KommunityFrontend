@@ -29,7 +29,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .main-arrow {
-	margin-top: -10px;
+	margin-top: -25px;
 	position: absolute;
 	margin-left: 16px;
 }

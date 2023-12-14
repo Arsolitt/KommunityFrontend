@@ -94,3 +94,9 @@ meter {
 :where(dialog:modal) {
 	all: revert;
 }
+
+a:active,
+a:hover,
+a {
+	text-decoration: none;
+}

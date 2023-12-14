@@ -1,4 +1,5 @@
 <script setup>
+// TODO: вынести логику градиента в отдельный файл
 import { onMounted, ref } from 'vue';
 
 const element = ref(null);

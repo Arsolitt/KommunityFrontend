@@ -1,62 +1,30 @@
 <script setup>
-// const props = defineProps({
-// 	services: Array,
-// });
-import { ref } from 'vue';
+import BaseContainer from '@/components/BaseContainer.vue';
+import { getServices } from '@/use/getServices.js';
 
-const services = ref([
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-	{
-		name: 'UI/UX-дизайн',
-		img: '/temp/service.png',
-	},
-]);
+const services = getServices();
+getServices(services);
 </script>
 
 <template>
-	<section>
-		<div v-for="service in services" class="card">
-			<h4 class="card__header">{{ service.name }}</h4>
-			<div class="card__content">
-				<a :href="service.name" class="card__link">
-					<img :src="service.img" alt="" class="card__img" />
-					<a :href="service.name">
-						<img
-							alt=""
-							class="card__button"
-							src="@/assets/svg/card__button.svg" />
+	<BaseContainer>
+		<section>
+			<div v-for="service in services" class="card">
+				<h4 class="card__header">{{ service.name }}</h4>
+				<div class="card__content">
+					<a :href="service.name" class="card__link">
+						<img :src="service.img" alt="" class="card__img" />
+						<a :href="service.name">
+							<img
+								alt=""
+								class="card__button"
+								src="@/assets/svg/card__button.svg" />
+						</a>
 					</a>
-				</a>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</BaseContainer>
 </template>
 
 <style lang="scss" scoped>
@@ -67,9 +35,9 @@ const services = ref([
 		position: relative;
 	}
 	&__header {
-		font-size: 20px;
+		font-size: 24px;
 		font-weight: 600;
-		line-height: 24px;
+		line-height: 28px;
 		margin-bottom: 14px;
 	}
 	&__img {

@@ -1,13 +1,11 @@
 <script setup></script>
 
 <template>
-	<section>
-		<slot />
-	</section>
+	<div class="section__container"><slot /></div>
 </template>
 
 <style lang="scss" scoped>
-section {
-	margin-top: -47px;
+.section__container {
+	width: 80%;
 }
 </style>
