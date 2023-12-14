@@ -5,6 +5,7 @@ import WelcomeSection from '@/components/WelcomeSection.vue';
 import BackgroundHeader from '@/components/BackgroundHeader.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
+import TeamSection from '@/components/TeamSection.vue';
 
 onMounted(() => {
 	if (
@@ -20,10 +21,16 @@ onMounted(() => {
 
 <template>
 	<TheNavbar />
-	<WelcomeSection />
-	<BackgroundHeader>Как это работает?</BackgroundHeader>
+	<WelcomeSection style="margin-bottom: 80px" />
+
+	<BackgroundHeader>Как это</BackgroundHeader>
 	<AboutSection />
 	<ServicesSection />
+
+	<BackgroundHeader>Команда</BackgroundHeader>
+	<TeamSection style="margin-bottom: 60px" />
+
+	<BackgroundHeader>Где мы?</BackgroundHeader>
 </template>
 
 <style lang="scss" scoped></style>

@@ -2,34 +2,36 @@
 import MainArrow from '@/components/MainArrow.vue';
 import SectionContainer from '@/components/SectionContainer.vue';
 import BaseContainer from '@/components/BaseContainer.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
+import SectionText from '@/components/SectionText.vue';
 </script>
 
 <template>
 	<BaseContainer>
 		<section class="section">
 			<SectionContainer>
-				<h2 class="section__header">
+				<SectionHeader>
 					Как это
 					<br />
 					работает?
-				</h2>
-				<p class="section__text">
+				</SectionHeader>
+				<SectionText>
 					Вы даёте нам задачу — а мы
 					<br />
 					собираем под неё уникальную
 					<br />
 					команду креативных специалистов.
-				</p>
+				</SectionText>
 				<br />
-				<p class="section__text">
+				<SectionText>
 					Все параметры работы подбираются
 					<br />
 					под ваш запрос: время, сложность
 					<br />
 					и стоимость.
-				</p>
+				</SectionText>
 				<h3 class="section__separator">Но!</h3>
-				<p class="section__text">
+				<SectionText>
 					Качество креативного продукта
 					<br />
 					остается всегда на высоте —
@@ -37,7 +39,7 @@ import BaseContainer from '@/components/BaseContainer.vue';
 					ведь мы в Комьюнити любим
 					<br />
 					мутить стилёк ;)
-				</p>
+				</SectionText>
 				<h3 class="section__separator">
 					Убедитесь
 					<br />
@@ -51,17 +53,7 @@ import BaseContainer from '@/components/BaseContainer.vue';
 
 <style lang="scss" scoped>
 .section {
-	margin-top: -47px;
-	&__header {
-		font-weight: 700;
-		font-size: 32px;
-		line-height: 35px;
-		margin-bottom: 28px;
-	}
-	&__text {
-		line-height: 21px;
-		//margin: 13px 0;
-	}
+	margin-top: -48px;
 	&__separator {
 		font-size: 20px;
 		font-weight: 600;
