@@ -6,7 +6,7 @@
 			alt=""
 			class="slider-navigation__button_prev"
 			src="@/assets/svg/slider-button__prev.svg" />
-		<div class="slider-pagination__wrapper">
+		<div class="slider-pagination-wrapper">
 			<div class="slider-pagination"></div>
 		</div>
 		<img

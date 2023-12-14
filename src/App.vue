@@ -6,6 +6,7 @@ import BackgroundHeader from '@/components/BackgroundHeader.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
 import TeamSection from '@/components/TeamSection.vue';
+import LocationSection from '@/components/LocationSection.vue';
 
 onMounted(() => {
 	if (
@@ -31,6 +32,7 @@ onMounted(() => {
 	<TeamSection style="margin-bottom: 60px" />
 
 	<BackgroundHeader>Где мы?</BackgroundHeader>
+	<LocationSection />
 </template>
 
 <style lang="scss" scoped></style>
