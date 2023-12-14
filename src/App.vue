@@ -7,6 +7,8 @@ import AboutSection from '@/components/AboutSection.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
 import TeamSection from '@/components/TeamSection.vue';
 import LocationSection from '@/components/LocationSection.vue';
+import ReviewsSection from '@/components/ReviewsSection.vue';
+import ContactSection from '@/components/ContactSection.vue';
 
 onMounted(() => {
 	if (
@@ -32,7 +34,13 @@ onMounted(() => {
 	<TeamSection style="margin-bottom: 60px" />
 
 	<BackgroundHeader>Где мы?</BackgroundHeader>
-	<LocationSection />
+	<LocationSection style="margin-bottom: 60px" />
+
+	<BackgroundHeader>Отзывы</BackgroundHeader>
+	<ReviewsSection />
+
+	<BackgroundHeader>Напишите</BackgroundHeader>
+	<ContactSection />
 </template>
 
 <style lang="scss" scoped></style>

@@ -5,8 +5,8 @@ import BaseContainer from '@/components/BaseContainer.vue';
 </script>
 
 <template>
-	<BaseContainer>
-		<section>
+	<section>
+		<BaseContainer>
 			<WelcomeVideo />
 			<p class="welcome-text">
 				Здесь вы можете создать сайт,
@@ -19,8 +19,8 @@ import BaseContainer from '@/components/BaseContainer.vue';
 				:hover-state="'gradient'">
 				Сотворить стилёк
 			</BaseButton>
-		</section>
-	</BaseContainer>
+		</BaseContainer>
+	</section>
 </template>
 
 <style lang="scss" scoped>

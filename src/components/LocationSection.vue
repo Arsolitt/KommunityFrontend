@@ -24,39 +24,41 @@ onMounted(() => {
 </script>
 
 <template>
-	<BaseContainer>
-		<SectionHeader>Мы в интернете!</SectionHeader>
-		<SectionText>
-			Да, да — хватит тратить свое время
+	<section class="section">
+		<BaseContainer>
+			<SectionHeader>Мы в интернете!</SectionHeader>
+			<SectionText>
+				Да, да — хватит тратить свое время
+				<br />
+				и ехать в офис ради небольшого диалога.
+			</SectionText>
 			<br />
-			и ехать в офис ради небольшого диалога.
-		</SectionText>
-		<br />
-		<SectionText>
-			С нами можно побщаться
-			<br />
-			в мессенджерах и в программах
-			<br />
-			удаленного доступа (Skype, Discord,
-			<br />
-			Zoom и другие...)
-		</SectionText>
-	</BaseContainer>
-	<div class="cubes-wrapper">
-		<img
-			alt=""
-			class="cubes-drop__photo cubes-drop_bounce"
-			src="@/assets/svg/cubes-drop__photo.svg" />
-		<img
-			alt=""
-			class="cubes-drop__brush cubes-drop_bounce"
-			src="@/assets/svg/cubes-drop__brush.svg" />
-		<img
-			alt=""
-			class="cubes-drop__person cubes-drop_bounce"
-			src="@/assets/svg/cubes-drop__person.svg" />
-		<img alt="" class="cubes" src="@/assets/svg/cubes.svg" />
-	</div>
+			<SectionText>
+				С нами можно побщаться
+				<br />
+				в мессенджерах и в программах
+				<br />
+				удаленного доступа (Skype, Discord,
+				<br />
+				Zoom и другие...)
+			</SectionText>
+		</BaseContainer>
+		<div class="cubes-wrapper">
+			<img
+				alt=""
+				class="cubes-drop__photo cubes-drop_bounce"
+				src="@/assets/svg/cubes-drop__photo.svg" />
+			<img
+				alt=""
+				class="cubes-drop__brush cubes-drop_bounce"
+				src="@/assets/svg/cubes-drop__brush.svg" />
+			<img
+				alt=""
+				class="cubes-drop__person cubes-drop_bounce"
+				src="@/assets/svg/cubes-drop__person.svg" />
+			<img alt="" class="cubes" src="@/assets/svg/cubes.svg" />
+		</div>
+	</section>
 </template>
 <style lang="scss" scoped>
 .cubes-wrapper {

@@ -4,11 +4,12 @@ import SectionContainer from '@/components/SectionContainer.vue';
 import BaseContainer from '@/components/BaseContainer.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import SectionText from '@/components/SectionText.vue';
+import SectionSeparator from '@/components/SectionSeparator.vue';
 </script>
 
 <template>
-	<BaseContainer>
-		<section class="section">
+	<section class="section">
+		<BaseContainer>
 			<SectionContainer>
 				<SectionHeader>
 					Как это
@@ -30,7 +31,7 @@ import SectionText from '@/components/SectionText.vue';
 					<br />
 					и стоимость.
 				</SectionText>
-				<h3 class="section__separator">Но!</h3>
+				<SectionSeparator>Но!</SectionSeparator>
 				<SectionText>
 					Качество креативного продукта
 					<br />
@@ -40,26 +41,19 @@ import SectionText from '@/components/SectionText.vue';
 					<br />
 					мутить стилёк ;)
 				</SectionText>
-				<h3 class="section__separator">
+				<SectionSeparator>
 					Убедитесь
 					<br />
 					сами
 					<MainArrow />
-				</h3>
+				</SectionSeparator>
 			</SectionContainer>
-		</section>
-	</BaseContainer>
+		</BaseContainer>
+	</section>
 </template>
 
 <style lang="scss" scoped>
 .section {
 	margin-top: -48px;
-	&__separator {
-		font-size: 20px;
-		font-weight: 600;
-		line-height: 24px;
-		text-align: right;
-		margin: 30px 0;
-	}
 }
 </style>

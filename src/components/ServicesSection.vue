@@ -7,8 +7,8 @@ getServices(services);
 </script>
 
 <template>
-	<BaseContainer>
-		<section>
+	<section>
+		<BaseContainer>
 			<div v-for="service in services" :key="service.ServiceId" class="card">
 				<h4 class="card__header">{{ service.name }}</h4>
 				<div class="card__content">
@@ -23,8 +23,8 @@ getServices(services);
 					</a>
 				</div>
 			</div>
-		</section>
-	</BaseContainer>
+		</BaseContainer>
+	</section>
 </template>
 
 <style lang="scss" scoped>
