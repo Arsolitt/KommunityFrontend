@@ -7,7 +7,7 @@ import SliderTeam from '@/components/TeamSlider.vue';
 </script>
 
 <template>
-	<section class="section">
+	<section id="team" class="section">
 		<BaseContainer>
 			<SectionHeader>Наша команда</SectionHeader>
 			<SectionText class="section__text">

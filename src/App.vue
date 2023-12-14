@@ -28,6 +28,7 @@ onMounted(() => {
 
 	<BackgroundHeader>Как это</BackgroundHeader>
 	<AboutSection />
+
 	<ServicesSection />
 
 	<BackgroundHeader>Команда</BackgroundHeader>

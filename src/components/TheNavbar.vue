@@ -2,14 +2,16 @@
 
 <template>
 	<nav>
-		<a class="logo" href=""><img alt="" src="@/assets/svg/logo.svg" /></a>
+		<a class="logo" href="#"><img alt="" src="@/assets/svg/logo.svg" /></a>
 		<ul class="menu">
-			<li class="menu__item"><a class="item__link" href="#works">Работы</a></li>
+			<li class="menu__item">
+				<a class="item__link" href="#services">Работы</a>
+			</li>
 			<li class="menu__item"><a class="item__link" href="#team">Команда</a></li>
 			<li class="menu__item">
 				<a class="item__link" href="#reviews">Отзывы</a>
 			</li>
-			<li class="menu__item"><a class="item__link" href="#shop">Магазин</a></li>
+			<li class="menu__item"><a class="item__link" href="">Магазин</a></li>
 		</ul>
 	</nav>
 </template>

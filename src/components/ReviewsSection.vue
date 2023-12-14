@@ -3,7 +3,7 @@ import SectionHeader from '@/components/SectionHeader.vue';
 </script>
 
 <template>
-	<section class="section">
+	<section id="reviews" class="section">
 		<SectionHeader>Отзывы клиентов</SectionHeader>
 	</section>
 </template>

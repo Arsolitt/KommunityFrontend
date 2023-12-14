@@ -7,7 +7,7 @@ getServices(services);
 </script>
 
 <template>
-	<section>
+	<section id="services" class="section">
 		<BaseContainer>
 			<div v-for="service in services" :key="service.ServiceId" class="card">
 				<h4 class="card__header">{{ service.name }}</h4>
