@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+const imgPath = '/temp/footer.jpg';
+</script>
 
 <template>
 	<footer class="footer">
@@ -6,7 +8,7 @@
 
 		<div class="footer__project">
 			<a href="">
-				<img alt="" class="footer__img" src="/temp/footer.jpg" />
+				<img :src="imgPath" alt="" class="footer__img" />
 			</a>
 			<a class="footer__name" href="">
 				<span>Название проекта в одну строку</span>
