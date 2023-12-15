@@ -42,7 +42,7 @@ onMounted(() => {
 	<ReviewsSection style="margin-bottom: 60px" />
 
 	<BackgroundHeader>Напишите</BackgroundHeader>
-	<ContactSection />
+	<ContactSection style="margin-bottom: 60px" />
 
 	<FooterSection />
 </template>
