@@ -28,7 +28,7 @@ const team = getTeam();
 		class="slider">
 		<SwiperSlide
 			v-for="member in team"
-			:key="member.MemberId"
+			:key="member.memberId"
 			class="slider__slide">
 			<a href="">
 				<img :src="member.img" alt="" class="slider__img" />

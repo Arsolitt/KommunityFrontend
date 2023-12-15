@@ -9,6 +9,7 @@ import TeamSection from '@/components/TeamSection.vue';
 import LocationSection from '@/components/LocationSection.vue';
 import ReviewsSection from '@/components/ReviewsSection.vue';
 import ContactSection from '@/components/ContactSection.vue';
+import FooterSection from '@/components/FooterSection.vue';
 
 onMounted(() => {
 	if (
@@ -38,10 +39,12 @@ onMounted(() => {
 	<LocationSection style="margin-bottom: 60px" />
 
 	<BackgroundHeader>Отзывы</BackgroundHeader>
-	<ReviewsSection />
+	<ReviewsSection style="margin-bottom: 60px" />
 
 	<BackgroundHeader>Напишите</BackgroundHeader>
 	<ContactSection />
+
+	<FooterSection />
 </template>
 
 <style lang="scss" scoped></style>

@@ -1,37 +1,37 @@
 export function getServices() {
 	return [
 		{
-			ServiceId: '0',
+			serviceId: '0',
 			name: 'UI/UX-дизайн',
 			img: '/temp/service_1.png',
 		},
 		{
-			ServiceId: '1',
+			serviceId: '1',
 			name: 'Иллюстрации и превью',
 			img: '/temp/service_2.png',
 		},
 		{
-			ServiceId: '2',
+			serviceId: '2',
 			name: 'Графический дизайн',
 			img: '/temp/service_3.png',
 		},
 		{
-			ServiceId: '3',
+			serviceId: '3',
 			name: '3D и анимация',
 			img: '/temp/service_4.png',
 		},
 		{
-			ServiceId: '4',
+			serviceId: '4',
 			name: 'Видео-продакшн',
 			img: '/temp/service_5.png',
 		},
 		{
-			ServiceId: '5',
+			serviceId: '5',
 			name: 'Фотосессии и ретушь',
 			img: '/temp/service_6.png',
 		},
 		{
-			ServiceId: '6',
+			serviceId: '6',
 			name: 'Выпускные альбомы',
 			img: '/temp/service_7.png',
 		},

@@ -9,7 +9,7 @@ getServices(services);
 <template>
 	<section id="services" class="section">
 		<BaseContainer>
-			<div v-for="service in services" :key="service.ServiceId" class="card">
+			<div v-for="service in services" :key="service.serviceId" class="card">
 				<h4 class="card__header">{{ service.name }}</h4>
 				<div class="card__content">
 					<a :href="service.name" class="card__link">
