@@ -49,6 +49,7 @@ import ContactForm from '@/components/ContactForm.vue';
 .social-links {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 240px;
 	margin-top: 25px;
 }

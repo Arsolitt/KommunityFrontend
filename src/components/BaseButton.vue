@@ -47,7 +47,7 @@ classObject.value[props.hoverState] = isHover;
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';
 button {
-	height: 50px;
+	height: 48px;
 	width: 100%;
 	text-align: center;
 	font-size: 18px;

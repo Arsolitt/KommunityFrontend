@@ -23,8 +23,7 @@ const imgPath = '/KommunityFrontend/temp/footer.jpg';
 
 		<div class="footer__credits">
 			<a class="logo" href="">
-				<div class="img"></div>
-				<span class="name">Комьюнити</span>
+				<img alt="" src="@/assets/svg/vector-logo.svg" />
 			</a>
 			<span class="rights">@ 2023 Все права защищены</span>
 		</div>
@@ -60,7 +59,7 @@ const imgPath = '/KommunityFrontend/temp/footer.jpg';
 	}
 	&__credits {
 		border-top: 1px solid #b37fb1;
-		padding-top: 5px;
+		padding-top: 12px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
