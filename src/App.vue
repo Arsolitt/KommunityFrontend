@@ -10,6 +10,7 @@ import LocationSection from '@/components/LocationSection.vue';
 import ReviewsSection from '@/components/ReviewsSection.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import FooterSection from '@/components/FooterSection.vue';
+import PlugComponent from '@/components/PlugComponent.vue';
 
 onMounted(() => {
 	if (
@@ -24,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<TheNavbar />
+	<TheNavbar class="navbar" />
 	<WelcomeSection style="margin-bottom: 80px" />
 
 	<BackgroundHeader>Как это</BackgroundHeader>
@@ -45,6 +46,24 @@ onMounted(() => {
 	<ContactSection style="margin-bottom: 60px" />
 
 	<FooterSection />
+	<PlugComponent class="plug" />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.plug {
+	display: none;
+}
+@media screen and (min-width: 500px) {
+	* {
+		display: none;
+	}
+	.navbar {
+		display: none;
+	}
+	.plug {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+</style>
