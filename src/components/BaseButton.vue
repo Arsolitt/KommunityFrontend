@@ -38,7 +38,8 @@ classObject.value[props.activeState] = isActive;
 			isHover = true;
 			isBasic = false;
 			isActive = false;
-		">
+		"
+		@click.prevent>
 		<slot />
 	</button>
 </template>
@@ -53,7 +54,6 @@ button {
 	font-weight: 700;
 	position: relative;
 	border-radius: 12px;
-	margin-top: 50px;
 	&::before {
 		content: '';
 		position: absolute;
@@ -64,19 +64,27 @@ button {
 		z-index: -1;
 		margin: -1px;
 		border-radius: inherit;
-		background: $base-gradient;
 	}
 }
 
 .glowing {
 	background: $glowing-gradient;
+	&::before {
+		background: $base-gradient;
+	}
 }
 
 .gradient {
 	background: $base-gradient;
+	&::before {
+		background: $base-gradient;
+	}
 }
 
 .solid {
 	background-color: $main-solid;
+	&::before {
+		background: $main-solid;
+	}
 }
 </style>

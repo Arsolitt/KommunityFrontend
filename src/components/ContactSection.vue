@@ -19,13 +19,37 @@ import ContactForm from '@/components/ContactForm.vue';
 					поработать с нами
 				</SectionText>
 				<SectionSeparator>
-					Мы сразу же ответим!
+					Мы сразу же
+					<br />
+					ответим!
 					<MainArrow />
 				</SectionSeparator>
 			</SectionContainer>
 			<ContactForm />
+			<SectionText style="margin-top: 60px">
+				По всем вопросам и предложениям
+				<br />
+				можете также связаться с нами через
+				<br />
+				удобный для вас мессенджер
+			</SectionText>
+			<div class="social-links">
+				<a href=""><img alt="" src="@/assets/svg/social-link__vk.svg" /></a>
+				<a href=""><img alt="" src="@/assets/svg/social-link__tg.svg" /></a>
+				<a href=""><img alt="" src="@/assets/svg/social-link__wa.svg" /></a>
+				<a href="">
+					<img alt="" src="@/assets/svg/social-link__email.svg" />
+				</a>
+			</div>
 		</BaseContainer>
 	</section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.social-links {
+	display: flex;
+	justify-content: space-between;
+	width: 240px;
+	margin-top: 25px;
+}
+</style>

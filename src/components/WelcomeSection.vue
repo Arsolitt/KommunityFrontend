@@ -16,7 +16,8 @@ import BaseContainer from '@/components/BaseContainer.vue';
 			<BaseButton
 				:active-state="'gradient'"
 				:base-state="'glowing'"
-				:hover-state="'gradient'">
+				:hover-state="'gradient'"
+				class="welcome-button">
 				Сотворить стилёк
 			</BaseButton>
 		</BaseContainer>
@@ -34,5 +35,8 @@ section {
 	@media screen and (min-width: 360px) {
 		font-size: 20px;
 	}
+}
+.welcome-button {
+	margin-top: 50px;
 }
 </style>

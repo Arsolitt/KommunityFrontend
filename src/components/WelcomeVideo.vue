@@ -18,7 +18,7 @@
 		реклама
 	</h1>
 </template>
-
+<!--TODO: Сделать бэкграунд видоса через псевдоэлемент-->
 <style lang="scss" scoped>
 .video {
 	position: relative;
@@ -66,7 +66,7 @@
 		font-size: 36px;
 		line-height: 36px;
 		margin-top: -26px;
-		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+		text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 		position: relative;
 		@media screen and (min-width: 410px) {
 			font-size: 48px;
