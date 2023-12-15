@@ -30,7 +30,6 @@ const services = getServices();
 			name="description"
 			rows="10"></textarea>
 		<BaseButton
-			:active-state="'solid'"
 			:base-state="'gradient'"
 			:hover-state="'solid'"
 			class="form__button">

@@ -14,7 +14,6 @@ import BaseContainer from '@/components/BaseContainer.vue';
 				заказать фотосет и многое другое ;)
 			</p>
 			<BaseButton
-				:active-state="'gradient'"
 				:base-state="'glowing'"
 				:hover-state="'gradient'"
 				class="welcome-button">

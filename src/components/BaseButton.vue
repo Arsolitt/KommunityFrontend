@@ -7,37 +7,37 @@ const props = defineProps({
 	activeState: String,
 });
 let isHover = ref(false);
-let isActive = ref(false);
+// let isActive = ref(false);
 let isBasic = ref(true);
 
 let classObject = ref({});
 classObject.value[props.baseState] = isBasic;
 classObject.value[props.hoverState] = isHover;
-classObject.value[props.activeState] = isActive;
+// classObject.value[props.activeState] = isActive;
 </script>
 
 <template>
 	<button
 		:class="classObject"
 		@focus="
-			isActive = true;
-			isHover = false;
+			// isActive = true;
+			isHover = true;
 			isBasic = false;
 		"
 		@focusout="
-			isActive = false;
+			// isActive = false;
 			isBasic = true;
 			isHover = false;
 		"
 		@mouseout="
 			isHover = false;
 			isBasic = true;
-			isActive = false;
+			// isActive = false;
 		"
 		@mouseover="
 			isHover = true;
 			isBasic = false;
-			isActive = false;
+			// isActive = false;
 		"
 		@click.prevent>
 		<slot />
