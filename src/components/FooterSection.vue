@@ -25,7 +25,7 @@ const imgPath = '/KommunityFrontend/temp/footer.jpg';
 			<a class="logo" href="">
 				<img alt="" src="@/assets/svg/vector-logo.svg" />
 			</a>
-			<span class="rights">@ 2023 Все права защищены</span>
+			<span class="rights">© 2023 Все права защищены</span>
 		</div>
 	</footer>
 </template>
