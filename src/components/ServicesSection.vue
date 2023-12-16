@@ -47,10 +47,13 @@ getServices(services);
 		position: absolute;
 		bottom: 10px;
 		right: 10px;
-		border-radius: 8px;
-		&:hover,
-		&:focus {
-			background-color: $main-solid;
+
+		img {
+			&:hover,
+			&:focus {
+				background-color: $main-solid;
+				border-radius: 8px;
+			}
 		}
 	}
 }
