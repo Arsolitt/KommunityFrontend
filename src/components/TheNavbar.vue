@@ -37,8 +37,13 @@ nav {
 	display: inline;
 	margin-left: 16px;
 	margin-right: 32px;
+
 	img {
 		vertical-align: bottom;
+		min-width: 22px;
+		min-height: 24px;
+		width: 100%;
+		height: 100%;
 	}
 }
 .menu {

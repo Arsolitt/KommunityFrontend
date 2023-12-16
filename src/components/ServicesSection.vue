@@ -14,11 +14,8 @@ getServices(services);
 				<div class="card__content">
 					<a :href="service.name" class="card__link">
 						<img :src="service.img" alt="" class="card__img" />
-						<a :href="service.name">
-							<img
-								alt=""
-								class="card__button"
-								src="@/assets/svg/card__button.svg" />
+						<a :href="service.name" class="card__button">
+							<img alt="" src="@/assets/svg/card__button.svg" />
 						</a>
 					</a>
 				</div>

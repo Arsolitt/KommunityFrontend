@@ -61,6 +61,9 @@ onMounted(() => {
 	</section>
 </template>
 <style lang="scss" scoped>
+.section {
+	margin-top: -30px;
+}
 .cubes-wrapper {
 	position: relative;
 	margin-top: 80px;

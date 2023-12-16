@@ -51,7 +51,7 @@ onMounted(() => {
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
-	margin-left: -20px;
+	margin-left: -22px;
 	margin-bottom: 48px;
 }
 </style>

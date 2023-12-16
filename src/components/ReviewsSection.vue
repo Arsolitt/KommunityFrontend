@@ -13,4 +13,8 @@ import BaseContainer from '@/components/BaseContainer.vue';
 	</section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.section {
+	margin-top: -47px;
+}
+</style>

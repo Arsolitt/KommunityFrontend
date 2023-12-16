@@ -46,6 +46,9 @@ import ContactForm from '@/components/ContactForm.vue';
 </template>
 
 <style lang="scss" scoped>
+.section {
+	margin-top: -47px;
+}
 .social-links {
 	display: flex;
 	justify-content: space-between;
