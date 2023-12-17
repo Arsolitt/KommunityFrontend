@@ -52,7 +52,9 @@ onMounted(() => {
 	<ContactSection style="margin-bottom: 60px" />
 
 	<FooterSection />
-	<PlugComponent class="plug" />
+	<PlugComponent class="plug">
+		Сайт для пк не готов, используй телефон!
+	</PlugComponent>
 </template>
 
 <style lang="scss" scoped>

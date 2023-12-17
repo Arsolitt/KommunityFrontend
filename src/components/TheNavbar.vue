@@ -35,7 +35,10 @@ const navbarStore = useNavbarStore();
 				</RouterLink>
 			</li>
 			<li class="menu__item">
-				<RouterLink :to="{ name: 'Shop' }" class="item__link">
+				<RouterLink
+					:class="{ item__link_active: navbarStore.activeLinks['shop'] }"
+					:to="{ name: 'Shop' }"
+					class="item__link">
 					Магазин
 				</RouterLink>
 			</li>

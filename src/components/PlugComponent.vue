@@ -4,7 +4,7 @@
 	<div class="plug">
 		<div class="text">
 			<span class="smile">¯\_(ツ)_/¯</span>
-			<span class="title">Сайт для пк не готов, используй телефон!</span>
+			<span class="title"><slot /></span>
 		</div>
 	</div>
 </template>
