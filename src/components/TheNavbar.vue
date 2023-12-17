@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import { useNavbarStore } from '@/store/NavbarStore.js';
+
+const navbarStore = useNavbarStore();
+</script>
 
 <template>
 	<nav>
@@ -8,18 +12,25 @@
 		<ul class="menu">
 			<li class="menu__item">
 				<RouterLink
+					:class="{ item__link_active: navbarStore.activeLinks['services'] }"
 					:to="{ name: 'Home', hash: '#services' }"
 					class="item__link">
 					Работы
 				</RouterLink>
 			</li>
 			<li class="menu__item">
-				<RouterLink :to="{ name: 'Home', hash: '#team' }" class="item__link">
+				<RouterLink
+					:class="{ item__link_active: navbarStore.activeLinks['team'] }"
+					:to="{ name: 'Home', hash: '#team' }"
+					class="item__link">
 					Команда
 				</RouterLink>
 			</li>
 			<li class="menu__item">
-				<RouterLink :to="{ name: 'Home', hash: '#reviews' }" class="item__link">
+				<RouterLink
+					:class="{ item__link_active: navbarStore.activeLinks['reviews'] }"
+					:to="{ name: 'Home', hash: '#reviews' }"
+					class="item__link">
 					Отзывы
 				</RouterLink>
 			</li>

@@ -1,13 +1,35 @@
 <script setup>
 import BaseContainer from '@/components/BaseContainer.vue';
 import { getServices } from '@/use/getServices.js';
+import { onMounted, ref } from 'vue';
+import { useNavbarStore } from '@/store/NavbarStore.js';
 
 const services = getServices();
 getServices(services);
+
+const navbarStore = useNavbarStore();
+
+const section = ref(null);
+const isIntersecting = ref(false);
+
+onMounted(() => {
+	const observer = new IntersectionObserver(
+		([entry]) => {
+			isIntersecting.value = !!(entry && entry.isIntersecting);
+		},
+		{
+			threshold: 0.2,
+		},
+	);
+
+	observer.observe(section.value);
+
+	navbarStore.activeLinks[section.value.id] = isIntersecting;
+});
 </script>
 
 <template>
-	<section id="services" class="section">
+	<section id="services" ref="section" class="section">
 		<BaseContainer>
 			<div v-for="service in services" :key="service.serviceId" class="card">
 				<h4 class="card__header">{{ service.name }}</h4>
@@ -26,6 +48,9 @@ getServices(services);
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';
+.section {
+	scroll-margin-top: 50px;
+}
 .card {
 	margin-bottom: 40px;
 	&__content {
