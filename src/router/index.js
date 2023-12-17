@@ -9,12 +9,10 @@ export const router = createRouter({
 			return {
 				el: to.hash,
 				top: 140,
-				behavior: 'smooth',
 			};
 		} else {
 			return {
 				top: 0,
-				behavior: 'smooth',
 			};
 		}
 	},

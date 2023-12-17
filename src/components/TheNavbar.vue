@@ -14,7 +14,8 @@ const navbarStore = useNavbarStore();
 				<RouterLink
 					:class="{ item__link_active: navbarStore.activeLinks['services'] }"
 					:to="{ name: 'Home', hash: '#services' }"
-					class="item__link">
+					class="item__link"
+					replace>
 					Работы
 				</RouterLink>
 			</li>
@@ -22,7 +23,8 @@ const navbarStore = useNavbarStore();
 				<RouterLink
 					:class="{ item__link_active: navbarStore.activeLinks['team'] }"
 					:to="{ name: 'Home', hash: '#team' }"
-					class="item__link">
+					class="item__link"
+					replace>
 					Команда
 				</RouterLink>
 			</li>
@@ -30,7 +32,8 @@ const navbarStore = useNavbarStore();
 				<RouterLink
 					:class="{ item__link_active: navbarStore.activeLinks['reviews'] }"
 					:to="{ name: 'Home', hash: '#reviews' }"
-					class="item__link">
+					class="item__link"
+					replace>
 					Отзывы
 				</RouterLink>
 			</li>

@@ -1,5 +1,8 @@
 @import 'reset.css';
 
+html {
+	scroll-behavior: smooth;
+}
 * {
 	color: #ffffff;
 	box-sizing: border-box;
