@@ -2,16 +2,32 @@
 
 <template>
 	<nav>
-		<a class="logo" href="#"><img alt="" src="@/assets/svg/logo.svg" /></a>
+		<RouterLink :to="{ name: 'Home' }" class="logo">
+			<img alt="" src="@/assets/svg/logo.svg" />
+		</RouterLink>
 		<ul class="menu">
 			<li class="menu__item">
-				<a class="item__link" href="#services">Работы</a>
+				<RouterLink
+					:to="{ name: 'Home', hash: '#services' }"
+					class="item__link">
+					Работы
+				</RouterLink>
 			</li>
-			<li class="menu__item"><a class="item__link" href="#team">Команда</a></li>
 			<li class="menu__item">
-				<a class="item__link" href="#reviews">Отзывы</a>
+				<RouterLink :to="{ name: 'Home', hash: '#team' }" class="item__link">
+					Команда
+				</RouterLink>
 			</li>
-			<li class="menu__item"><a class="item__link" href="">Магазин</a></li>
+			<li class="menu__item">
+				<RouterLink :to="{ name: 'Home', hash: '#reviews' }" class="item__link">
+					Отзывы
+				</RouterLink>
+			</li>
+			<li class="menu__item">
+				<RouterLink :to="{ name: 'Shop' }" class="item__link">
+					Магазин
+				</RouterLink>
+			</li>
 		</ul>
 	</nav>
 </template>
