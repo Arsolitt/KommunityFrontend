@@ -1,5 +1,8 @@
-export function getReviews() {
-	return [
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
+
+export const useReviewsStore = defineStore('reviewsStore', () => {
+	const reviews = [
 		{
 			reviewId: '0',
 			name: 'Олег Васильевич',
@@ -64,4 +67,5 @@ export function getReviews() {
 			text: 'С ребятами из Комьюнити мы  работаем очень давно.  Здесь всегда знают, как сделать крутой стиль для любого мероприятия, а менеджеры компании всегда помогут собрать сеты. Мы работаем с Натальей, и её самое ценное качество - вовлеченность в процесс. ',
 		},
 	];
-}
+	return { reviews };
+});

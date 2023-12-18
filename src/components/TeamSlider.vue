@@ -1,11 +1,13 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination } from 'swiper/modules';
-import { getTeam } from '@/use/getTeam.js';
 import SliderNavigation from '@/components/SliderNavigation.vue';
 import { renderSliderPagination } from '@/use/renderSliderPagination.js';
+import { useTeamStore } from '@/store/TeamStore.js';
+
 const modules = [Navigation, Pagination];
-const team = getTeam();
+const teamStore = useTeamStore();
+const team = teamStore.team;
 </script>
 
 <template>

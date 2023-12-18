@@ -1,5 +1,8 @@
-export function getServices() {
-	return [
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
+
+export const useServicesStore = defineStore('servicesStore', () => {
+	const services = [
 		{
 			serviceId: 0,
 			name: 'UI/UX-дизайн',
@@ -43,6 +46,5 @@ export function getServices() {
 			selected: false,
 		},
 	];
-}
-
-// TODO: Засунуть сервисы в стор
+	return { services };
+});

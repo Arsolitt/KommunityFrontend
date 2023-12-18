@@ -1,5 +1,8 @@
-export function getTeam() {
-	return [
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
+
+export const useTeamStore = defineStore('teamStore', () => {
+	const team = [
 		{
 			memberId: 0,
 			name: 'Илья',
@@ -31,4 +34,5 @@ export function getTeam() {
 			img: '/KommunityFrontend/temp/team_1.png',
 		},
 	];
-}
+	return { team };
+});

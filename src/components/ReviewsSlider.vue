@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import SliderNavigation from '@/components/SliderNavigation.vue';
 import { renderSliderPagination } from '@/use/renderSliderPagination.js';
 import { Navigation, Pagination } from 'swiper/modules';
-import { getReviews } from '@/use/getReviews.js';
+import { useReviewsStore } from '@/store/ReviewsStore.js';
 
-const reviews = getReviews();
+const reviewsStore = useReviewsStore();
+const reviews = reviewsStore.reviews;
 const modules = [Navigation, Pagination];
 </script>
 

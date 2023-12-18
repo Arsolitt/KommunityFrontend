@@ -1,11 +1,11 @@
 <script setup>
 import BaseContainer from '@/components/BaseContainer.vue';
-import { getServices } from '@/use/getServices.js';
 import { onMounted, ref } from 'vue';
 import { useNavbarStore } from '@/store/NavbarStore.js';
+import { useServicesStore } from '@/store/ServicesStore.js';
 
-const services = getServices();
-getServices(services);
+const servicesStore = useServicesStore();
+const services = servicesStore.services;
 
 const navbarStore = useNavbarStore();
 

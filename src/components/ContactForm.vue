@@ -1,8 +1,9 @@
 <script setup>
-import { getServices } from '@/use/getServices.js';
 import BaseButton from '@/components/BaseButton.vue';
+import { useServicesStore } from '@/store/ServicesStore.js';
 
-const services = getServices();
+const servicesStore = useServicesStore();
+const services = servicesStore.services;
 </script>
 
 <template>
