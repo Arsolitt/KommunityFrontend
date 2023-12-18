@@ -3,34 +3,32 @@ import { ref } from 'vue';
 
 const props = defineProps({
 	baseState: String,
-	hoverState: String,
-	activeState: String,
 });
-let isHover = ref(false);
+let isActive = ref(false);
 let isBasic = ref(true);
 
 let classObject = ref({});
 classObject.value[props.baseState] = isBasic;
-classObject.value[props.hoverState] = isHover;
+classObject.value['solid'] = isActive;
 </script>
 
 <template>
 	<button
 		:class="classObject"
 		@focus="
-			isHover = true;
+			isActive = true;
 			isBasic = false;
 		"
 		@focusout="
 			isBasic = true;
-			isHover = false;
+			isActive = false;
 		"
 		@mouseout="
-			isHover = false;
+			isActive = false;
 			isBasic = true;
 		"
 		@mouseover="
-			isHover = true;
+			isActive = true;
 			isBasic = false;
 		"
 		@click.prevent>
@@ -64,7 +62,7 @@ button {
 .glowing {
 	background: $glowing-gradient;
 	&::before {
-		background: $base-gradient;
+		background: $border-gradient;
 	}
 }
 

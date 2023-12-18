@@ -11,6 +11,7 @@ const contactStore = useContactStore();
 			<BaseModal
 				v-if="contactStore.contactRequestNotificationOpen"
 				:background-image="'/KommunityFrontend/svg/contact-request-notification.svg'"
+				:modal-offset="'margin-top: -150px'"
 				@close="contactStore.contactRequestNotificationOpen = false">
 				<template v-slot:modal-header>
 					<span class="modal__header">Спасибо за Вашу заявку!</span>

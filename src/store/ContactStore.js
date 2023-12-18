@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 export const useContactStore = defineStore('contactStore', () => {
 	const contactModalOpen = ref(false);
-	const contactRequestNotificationOpen = ref(false);
+	const contactRequestNotificationOpen = ref(true);
 
 	function sendContacts() {
 		// задержка для прикола, чтобы кнопка успела стейт поменять

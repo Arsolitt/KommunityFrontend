@@ -6,6 +6,10 @@ const props = defineProps({
 		type: String,
 		required: false,
 	},
+	modalOffset: {
+		type: String,
+		required: false,
+	},
 });
 
 const emits = defineEmits(['close']);
@@ -27,7 +31,7 @@ onMounted(() => {
 		tabindex="-1"
 		@click.self="close"
 		@keydown.esc="close">
-		<div class="modal">
+		<div :style="`${props.modalOffset}`" class="modal">
 			<div class="modal__header">
 				<slot name="modal-header" />
 				<button class="modal-button_close" @click="close">

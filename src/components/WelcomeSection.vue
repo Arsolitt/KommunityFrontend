@@ -25,7 +25,6 @@ const openModal = () => {
 			</p>
 			<BaseButton
 				:base-state="'glowing'"
-				:hover-state="'gradient'"
 				class="welcome-button"
 				@click="openModal">
 				Сотворить стилёк

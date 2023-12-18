@@ -34,7 +34,6 @@ const services = servicesStore.services;
 			rows="10"></textarea>
 		<BaseButton
 			:base-state="'gradient'"
-			:hover-state="'solid'"
 			class="form__button"
 			@click.prevent="contactStore.sendContacts">
 			Отправить заявку
