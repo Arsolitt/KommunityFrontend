@@ -1,0 +1,29 @@
+<script setup>
+import BaseModal from '@/components/BaseModal.vue';
+import ContactForm from '@/components/ContactForm.vue';
+import { useContactStore } from '@/store/ContactStore.js';
+
+const contactStore = useContactStore();
+</script>
+
+<template>
+	<BaseModal
+		:background-image="'/KommunityFrontend/svg/contact-request-notification.svg'"
+		@close="contactStore.contactRequestNotificationOpen = false">
+		<template v-slot:modal-header>
+			<span class="modal__header">Спасибо за Вашу заявку!</span>
+		</template>
+		<template v-slot:modal-content>
+			В ближайшее время с Вами
+			<br />
+			свяжутся наши специалисты
+		</template>
+	</BaseModal>
+</template>
+
+<style lang="scss" scoped>
+.modal__header {
+	font-size: 20px;
+	font-weight: 700;
+}
+</style>

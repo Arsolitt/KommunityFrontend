@@ -1,8 +1,10 @@
 <script setup>
 import BaseButton from '@/components/BaseButton.vue';
 import { useServicesStore } from '@/store/ServicesStore.js';
+import { useContactStore } from '@/store/ContactStore.js';
 
 const servicesStore = useServicesStore();
+const contactStore = useContactStore();
 const services = servicesStore.services;
 </script>
 
@@ -33,7 +35,8 @@ const services = servicesStore.services;
 		<BaseButton
 			:base-state="'gradient'"
 			:hover-state="'solid'"
-			class="form__button">
+			class="form__button"
+			@click.prevent="contactStore.sendContacts">
 			Отправить заявку
 		</BaseButton>
 	</form>

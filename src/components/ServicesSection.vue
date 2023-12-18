@@ -66,6 +66,7 @@ onMounted(() => {
 		max-height: 205px;
 		height: 100%;
 		width: 100%;
+		vertical-align: bottom;
 	}
 	&__button {
 		position: absolute;

@@ -11,5 +11,6 @@ img {
 		background-color: $main-solid;
 		border-radius: 8px;
 	}
+	vertical-align: bottom;
 }
 </style>
