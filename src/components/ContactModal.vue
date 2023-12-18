@@ -7,18 +7,24 @@ const contactStore = useContactStore();
 </script>
 
 <template>
-	<BaseModal @close="contactStore.contactModalOpen = false">
-		<template v-slot:modal-header>
-			<span class="modal__header">
-				Расскажите
-				<br />
-				о своей задаче
-			</span>
-		</template>
-		<template v-slot:modal-content>
-			<ContactForm />
-		</template>
-	</BaseModal>
+	<teleport to="#app">
+		<transition name="modal">
+			<BaseModal
+				v-if="contactStore.contactModalOpen"
+				@close="contactStore.contactModalOpen = false">
+				<template v-slot:modal-header>
+					<span class="modal__header">
+						Расскажите
+						<br />
+						о своей задаче
+					</span>
+				</template>
+				<template v-slot:modal-content>
+					<ContactForm />
+				</template>
+			</BaseModal>
+		</transition>
+	</teleport>
 </template>
 
 <style lang="scss" scoped>

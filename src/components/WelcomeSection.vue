@@ -6,6 +6,12 @@ import ContactModal from '@/components/ContactModal.vue';
 import { useContactStore } from '@/store/ContactStore.js';
 
 const contactStore = useContactStore();
+
+const openModal = () => {
+	setTimeout(() => {
+		contactStore.contactModalOpen = true;
+	}, 200);
+};
 </script>
 
 <template>
@@ -21,10 +27,10 @@ const contactStore = useContactStore();
 				:base-state="'glowing'"
 				:hover-state="'gradient'"
 				class="welcome-button"
-				@click="contactStore.contactModalOpen = true">
+				@click="openModal">
 				Сотворить стилёк
 			</BaseButton>
-			<ContactModal v-if="contactStore.contactModalOpen" />
+			<ContactModal />
 		</BaseContainer>
 	</section>
 </template>

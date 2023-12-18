@@ -45,8 +45,7 @@ const contactStore = useContactStore();
 					<img alt="" src="@/assets/svg/social-link__email.svg" />
 				</a>
 			</div>
-			<ContactRequestNotificationModal
-				v-if="contactStore.contactRequestNotificationOpen" />
+			<ContactRequestNotificationModal />
 		</BaseContainer>
 	</section>
 </template>

@@ -50,15 +50,17 @@ onMounted(() => {
 <style lang="scss" scoped>
 .modal-wrapper {
 	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	inset: 0;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(40, 37, 40, 0.75);
 	z-index: 10;
 	.modal {
 		max-width: 366px;
 		min-height: 230px;
 		width: 100%;
 		background: $main-dark;
-		margin: 40px auto;
 		border-radius: 12px;
 		position: relative;
 		padding: 20px;
