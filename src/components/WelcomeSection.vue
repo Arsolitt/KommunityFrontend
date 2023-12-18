@@ -2,11 +2,8 @@
 import WelcomeVideo from '@/components/WelcomeVideo.vue';
 import BaseButton from '@/components/BaseButton.vue';
 import BaseContainer from '@/components/BaseContainer.vue';
-import BaseModal from '@/components/BaseModal.vue';
-import ContactForm from '@/components/ContactForm.vue';
 import ContactModal from '@/components/ContactModal.vue';
 import { useContactStore } from '@/store/ContactStore.js';
-import ContactRequestNotificationModal from '@/components/ContactRequestNotificationModal.vue';
 
 const contactStore = useContactStore();
 </script>
@@ -28,8 +25,6 @@ const contactStore = useContactStore();
 				Сотворить стилёк
 			</BaseButton>
 			<ContactModal v-if="contactStore.contactModalOpen" />
-			<ContactRequestNotificationModal
-				v-if="contactStore.contactRequestNotificationOpen" />
 		</BaseContainer>
 	</section>
 </template>

@@ -6,6 +6,10 @@ import SectionText from '@/components/SectionText.vue';
 import SectionSeparator from '@/components/SectionSeparator.vue';
 import MainArrow from '@/components/MainArrow.vue';
 import ContactForm from '@/components/ContactForm.vue';
+import ContactRequestNotificationModal from '@/components/ContactRequestNotificationModal.vue';
+import { useContactStore } from '@/store/ContactStore.js';
+
+const contactStore = useContactStore();
 </script>
 
 <template>
@@ -41,6 +45,8 @@ import ContactForm from '@/components/ContactForm.vue';
 					<img alt="" src="@/assets/svg/social-link__email.svg" />
 				</a>
 			</div>
+			<ContactRequestNotificationModal
+				v-if="contactStore.contactRequestNotificationOpen" />
 		</BaseContainer>
 	</section>
 </template>
