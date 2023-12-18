@@ -3,6 +3,7 @@ import BaseContainer from '@/components/BaseContainer.vue';
 import { onMounted, ref } from 'vue';
 import { useNavbarStore } from '@/store/NavbarStore.js';
 import { useServicesStore } from '@/store/ServicesStore.js';
+import BaseCardButton from '@/components/BaseCardButton.vue';
 
 const servicesStore = useServicesStore();
 const services = servicesStore.services;
@@ -36,9 +37,7 @@ onMounted(() => {
 				<div class="card__content">
 					<a :href="service.name" class="card__link">
 						<img :src="service.img" alt="" class="card__img" />
-						<a :href="service.name" class="card__button">
-							<img alt="" src="@/assets/svg/card__button.svg" />
-						</a>
+						<BaseCardButton :href="service.name" class="card__button" />
 					</a>
 				</div>
 			</div>
@@ -72,14 +71,6 @@ onMounted(() => {
 		position: absolute;
 		bottom: 10px;
 		right: 10px;
-
-		img {
-			&:hover,
-			&:focus {
-				background-color: $main-solid;
-				border-radius: 8px;
-			}
-		}
 	}
 }
 </style>

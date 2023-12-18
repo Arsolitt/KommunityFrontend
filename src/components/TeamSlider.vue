@@ -4,6 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import SliderNavigation from '@/components/SliderNavigation.vue';
 import { renderSliderPagination } from '@/use/renderSliderPagination.js';
 import { useTeamStore } from '@/store/TeamStore.js';
+import BaseCardButton from '@/components/BaseCardButton.vue';
 
 const modules = [Navigation, Pagination];
 const teamStore = useTeamStore();
@@ -39,7 +40,7 @@ const team = teamStore.team;
 			<div>
 				<h5 class="slider__name">
 					{{ member.name }}
-					<a href=""><img alt="" src="@/assets/svg/card__button.svg" /></a>
+					<BaseCardButton :href="member.name" />
 				</h5>
 				<span class="slider__specialization">
 					{{ member.specialization }}
