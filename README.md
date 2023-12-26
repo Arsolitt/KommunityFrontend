@@ -6,4 +6,4 @@ Vue 3 Composition API, Pinia
 
 - [ ] Вёрстка для ПК приняла ислам
 
-  ![Alt text](./README/image.png)
+  ![Alt text](./README/image1.png)
