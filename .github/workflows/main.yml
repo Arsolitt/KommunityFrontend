@@ -27,4 +27,3 @@ jobs:
           ssh-port: ${{ secrets.SSH_PORT }}
           source-path: app/dist
           destination-path: /var/www/kommunityLanding/
-          rsync-options: --dry-run
