@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     zsh \
     rsync
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-RUN npm install
+RUN npm ci
 RUN npm run build
 WORKDIR /home/app
 EXPOSE 3333
