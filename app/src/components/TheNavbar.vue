@@ -16,7 +16,7 @@ const navbarStore = useNavbarStore();
 					:to="{ name: 'Home', hash: '#services' }"
 					class="item__link"
 					replace>
-					Работы
+					Работы1
 				</RouterLink>
 			</li>
 			<li class="menu__item">
