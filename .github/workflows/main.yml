@@ -17,7 +17,7 @@ jobs:
       - name: Install deps
         run: cd app && npm ci
       - name: Production build
-        run: cd app && npm run build
+        run: cd app && npm run build && mv dist kommunityLanding
       - name: Upload to hosting
         uses: SamKirkland/web-deploy@v1
         with:
@@ -25,5 +25,5 @@ jobs:
           remote-user: ${{ secrets.SSH_LOGIN }}
           private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: ${{ secrets.SSH_PORT }}
-          source-path: app/dist/*
-          destination-path: /var/www/kommunityLanding/
+          source-path: app/kommunityLanding
+          destination-path: /var/www/
