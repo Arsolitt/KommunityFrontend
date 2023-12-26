@@ -1,0 +1,7 @@
+.prettierrc
+.idea
+README
+README.md
+dist
+Dockerfile
+node_modules

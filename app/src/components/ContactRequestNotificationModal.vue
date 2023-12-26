@@ -10,7 +10,7 @@ const contactStore = useContactStore();
 		<transition name="modal">
 			<BaseModal
 				v-if="contactStore.contactRequestNotificationOpen"
-				:background-image="'/KommunityFrontend/svg/contact-request-notification.svg'"
+				:background-image="'/svg/contact-request-notification.svg'"
 				:modal-offset="'margin-top: -150px'"
 				@close="contactStore.contactRequestNotificationOpen = false">
 				<template v-slot:modal-header>

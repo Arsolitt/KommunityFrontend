@@ -1,5 +1,5 @@
 <script setup>
-const imgPath = '/KommunityFrontend/temp/footer.jpg';
+const imgPath = '/temp/footer.jpg';
 </script>
 
 <template>
