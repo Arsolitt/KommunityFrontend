@@ -25,5 +25,5 @@ jobs:
           remote-user: ${{ secrets.SSH_LOGIN }}
           private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: ${{ secrets.SSH_PORT }}
-          source-path: app/dist
+          source-path: app/dist/*
           destination-path: /var/www/kommunityLanding/
