@@ -8,10 +8,13 @@ rebuild:
 	docker-compose build
 # создать контейнер
 up:
-	docker-compose up -d; docker exec -it landing zsh #|| winpty docker exec -it landing zsh # для запуска на винде
+	docker-compose up -d; docker exec -it landing zsh || winpty docker exec -it landing zsh
 # выключить контейнер
 down:
 	docker-compose down
 # зайти в терминал контейнера
 shell:
-	docker exec -it landing zsh #|| winpty docker exec -it webapp zsh # для запуска на винде
+	docker exec -it landing zsh || winpty docker exec -it landing zsh
+# сборка статики для прода
+prod:
+	docker exec -it landing npm run build || winpty docker exec -it landing npm run build
