@@ -15,10 +15,10 @@ jobs:
         with:
           node-version: 21
       - name: Install deps
-        run: npm ci
+        run: cd app && npm ci
       - name: Production build
         run: npm run build
-      - name: 📂 Upload to hosting
+      - name: 📂Upload to hosting
         uses: SamKirkland/web-deploy@v1
         with:
           target-server: ${{ secrets.HOST }}
