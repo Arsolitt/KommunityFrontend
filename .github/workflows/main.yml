@@ -25,6 +25,6 @@ jobs:
           remote-user: ${{ secrets.SSH_LOGIN }}
           private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: ${{ secrets.SSH_PORT }}
-          source-path: ./dist/*
+          source-path: dist
           destination-path: /var/www/kommunityLanding/
           rsync-options: --dry-run
