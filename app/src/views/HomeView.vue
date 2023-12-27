@@ -66,9 +66,7 @@ onMounted(() => {
 		display: none;
 	}
 	.plug {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: grid;
 	}
 }
 </style>
