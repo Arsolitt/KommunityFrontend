@@ -68,7 +68,11 @@
 		margin-top: -26px;
 		text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 		position: relative;
-		@media screen and (min-width: 410px) {
+		@media screen and (min-width: 360px) {
+			font-size: 44px;
+			line-height: 44px;
+		}
+		@media screen and (min-width: 400px) {
 			font-size: 48px;
 			line-height: 48px;
 		}

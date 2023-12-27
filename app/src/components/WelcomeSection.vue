@@ -44,6 +44,9 @@ const openModal = () => {
 	font-size: 15px;
 	margin-top: 25px;
 	@media screen and (min-width: 360px) {
+		font-size: 18px;
+	}
+	@media screen and (min-width: 395px) {
 		font-size: 20px;
 	}
 }
