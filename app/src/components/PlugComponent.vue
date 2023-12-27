@@ -1,6 +1,4 @@
-<script setup>
-const domain = window.location.hostname;
-</script>
+<script setup></script>
 
 <template>
 	<div class="plug">
@@ -81,7 +79,7 @@ const domain = window.location.hostname;
 				<br />
 				реклама
 			</h1>
-			<a :href="domain" class="link">
+			<a href="#" class="link">
 				<svg
 					width="220"
 					height="220"

@@ -24,13 +24,7 @@ onMounted(() => {
 	<section id="shop" ref="section" class="section">
 		<BaseContainer></BaseContainer>
 	</section>
-	<PlugComponent class="plug">Магазин пока не готов :(</PlugComponent>
+	<PlugComponent />
 </template>
 
-<style lang="scss" scoped>
-.plug {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-</style>
+<style lang="scss" scoped></style>
