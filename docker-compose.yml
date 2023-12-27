@@ -2,18 +2,18 @@ version: '3.9'
 
 services:
   landing:
-    command: sh -c "rsync -arv /home/cache/node_modules/. /home/app/node_modules && rsync -arv /home/cache/dist/. /home/app/dist && npm run dev"
     build: # откуда брать инструкции для билда
       context: ./app/
       dockerfile: Dockerfile
+      args:
+        UID: 1000
+        GID: 1000
     image: landing # название образа
     container_name: landing # имя контейнера
     restart: unless-stopped # перезагрузка, если что-то пошло не так
     stdin_open: true
     tty: true
     volumes:
-      - type: bind
-        source: ./app
-        target: /home/app
+      - ./app:/home/app
     ports:
       - "3333:3333" # какой порт показывать снаружи
