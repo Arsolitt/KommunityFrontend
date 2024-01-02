@@ -3,8 +3,6 @@ MAINTAINER Arsolitt
 EXPOSE 3333
 ARG UID
 ARG GID
-ENV UID=${UID}
-ENV GID=${GID}
 RUN apt-get update && apt-get install -y \
     nano \
     mc \

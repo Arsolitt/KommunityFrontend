@@ -1,0 +1,33 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	color: #ffffff;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $main-dark;
+}
+
+#app {
+	font-weight: 500;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-feature-settings:
+		'clig' off,
+		'liga' off;
+	font-family: Raleway, sans-serif;
+	overflow: hidden;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+	transition: all 0.25s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+	opacity: 0;
+	transform: scale(1.1);
+}
