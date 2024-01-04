@@ -20,7 +20,10 @@ const slidesPerView = projects.length - 1;
 			class="slider"
 			direction="vertical"
 			:grab-cursor="true"
-			spaceBetween="-15">
+			spaceBetween="-15"
+			:free-mode="{
+				enabled: true,
+			}">
 			<SwiperSlide
 				v-for="project in projects"
 				:key="project.projectId"
