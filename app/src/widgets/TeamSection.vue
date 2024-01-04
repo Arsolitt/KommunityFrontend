@@ -5,7 +5,7 @@ import BaseContainer from '@ui/BaseContainer.vue';
 import 'swiper/css/bundle';
 import { onMounted, ref } from 'vue';
 import { useNavbarStore } from '@store/NavbarStore.js';
-import TeamSlider from '@features/TeamSlider.vue';
+import TeamSlider from '@entities/TeamSlider.vue';
 
 const navbarStore = useNavbarStore();
 

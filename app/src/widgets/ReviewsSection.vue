@@ -1,6 +1,6 @@
 <script setup>
 import SectionHeader from '@ui/SectionHeader.vue';
-import ReviewsSlider from '@features/ReviewsSlider.vue';
+import ReviewsSlider from '@entities/ReviewsSlider.vue';
 import BaseContainer from '@ui/BaseContainer.vue';
 import { onMounted, ref } from 'vue';
 import { useNavbarStore } from '@store/NavbarStore.js';
