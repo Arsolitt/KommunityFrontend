@@ -7,29 +7,34 @@ const props = defineProps({
 	},
 });
 const projects = props.projects;
+const slidesPerView = projects.length - 1;
 </script>
 
 <template>
-	<Swiper
-		:loop="true"
-		slides-per-view="3"
-		:speed="600"
-		class="slider"
-		direction="vertical"
-		:grab-cursor="true"
-		:spaceBetween="-15">
-		<SwiperSlide
-			v-for="project in projects"
-			:key="project.projectId"
-			class="slider__slide">
-			<a href="" class="slider__link">
-				<img :src="project.img" alt="" class="slider__img" />
-				<h5 class="slider__title">
-					<a href="">{{ project.title }}</a>
-				</h5>
-			</a>
-		</SwiperSlide>
-	</Swiper>
+	<div class="my-wrapper" :style="`height: ${projects.length * 230}px`">
+		<Swiper
+			:loop="true"
+			:slides-per-group="1"
+			:slides-per-view="slidesPerView"
+			:speed="600"
+			class="slider"
+			direction="vertical"
+			:grab-cursor="true"
+			:spaceBetween="-15"
+			:threshold="5">
+			<SwiperSlide
+				v-for="project in projects"
+				:key="project.projectId"
+				class="slider__slide">
+				<a href="" class="slider__link">
+					<img :src="project.img" alt="" class="slider__img" />
+					<h5 class="slider__title">
+						<a href="">{{ project.title }}</a>
+					</h5>
+				</a>
+			</SwiperSlide>
+		</Swiper>
+	</div>
 </template>
 
 <style lang="scss" scoped>
@@ -37,15 +42,17 @@ const projects = props.projects;
 	height: 100%;
 
 	&__slide {
-		width: 100%;
 		max-height: 230px;
 		height: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	&__link {
 		display: block;
 		position: relative;
 		height: 100%;
+		width: 100%;
 	}
 
 	&__title {
@@ -64,4 +71,22 @@ const projects = props.projects;
 		border-radius: 18px 18px 0 0;
 	}
 }
+
+//.swiper-slide {
+//	width: 414px;
+//	display: flex;
+//	justify-content: center;
+//
+//	&-prev {
+//		max-width: 414px;
+//		width: 100%;
+//		display: flex;
+//		justify-content: center;
+//	}
+//
+//	&-next {
+//		display: flex;
+//		justify-content: center;
+//	}
+//}
 </style>

@@ -17,5 +17,6 @@ const projectsStore = useProjectsStore();
 <style scoped lang="scss">
 .section {
 	max-height: 100dvh;
+	overflow: hidden;
 }
 </style>

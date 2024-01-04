@@ -24,6 +24,26 @@ const projects = [
 		title: 'Проект 4 в одну строку максимум',
 		img: '/temp/project_4.jpg',
 	},
+	{
+		projectId: 5,
+		title: 'Проект 5 в одну строку максимум',
+		img: '/temp/project_2.jpg',
+	},
+	{
+		projectId: 6,
+		title: 'Проект 6 в одну строку максимум',
+		img: '/temp/project_2.jpg',
+	},
+	{
+		projectId: 7,
+		title: 'Проект 7 в одну строку максимум',
+		img: '/temp/project_2.jpg',
+	},
+	{
+		projectId: 8,
+		title: 'Проект 8 в одну строку максимум',
+		img: '/temp/project_2.jpg',
+	},
 ];
 
 function projectsByTag() {}
