@@ -14,4 +14,4 @@ USER 1000
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 WORKDIR /home/app
 COPY . .
-CMD npm ci && npm run dev
+ENTRYPOINT ["npm", "run", "docker_dev"]
