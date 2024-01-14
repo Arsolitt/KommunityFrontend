@@ -1,16 +1,26 @@
 <script setup>
-// TODO: вынести логику градиента в отдельный файл
 import { onMounted, ref } from 'vue';
 
 const element = ref(null);
+
+const props = defineProps({
+	fullBright: {
+		type: Boolean,
+		required: false,
+		default: false,
+	},
+});
 
 onMounted(() => {
 	const bgHeader = element.value;
 	bgHeaderStroke(bgHeader, 1);
 
-	window.addEventListener('scroll', () => {
-		changeBgHeaderOpacity();
-	});
+	props.fullBright
+		? bgHeaderStroke(bgHeader, 0)
+		: window.addEventListener('scroll', () => {
+				changeBgHeaderOpacity();
+			});
+
 	function changeBgHeaderOpacity() {
 		const bgHeaderHeight = bgHeader.offsetHeight;
 		const bgHeaderOffset =

@@ -8,8 +8,8 @@ services:
       args:
         UID: 1000
         GID: 1000
-    image: landing # название образа
-    container_name: landing # имя контейнера
+    image: kommunity_landing # название образа
+    container_name: kommunity_landing # имя контейнера
     restart: unless-stopped # перезагрузка, если что-то пошло не так
     stdin_open: true
     tty: true
