@@ -23,6 +23,5 @@ const props = defineProps({
 <style scoped lang="scss">
 ul {
 	display: inline-flex;
-	//align-content: flex-end;
 }
 </style>

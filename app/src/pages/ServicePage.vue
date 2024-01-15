@@ -40,7 +40,7 @@ onBeforeUnmount(() => {
 			<Breadcrumbs :links="links" class="Breadcrumbs" />
 		</BaseContainer>
 		<BackgroundHeader :fullBright="true" class="BackgroundHeader">
-			{{ service.name }}
+			{{ service.bgName || service.name }}
 		</BackgroundHeader>
 		<ProjectsSlider :projects="projects" class="ProjectsSlider" />
 	</section>
@@ -54,7 +54,8 @@ onBeforeUnmount(() => {
 
 .background-text {
 	top: -10px;
-	margin-left: -8px;
+	margin-left: 5px;
+	//margin-right: auto;
 }
 
 .Breadcrumbs {
