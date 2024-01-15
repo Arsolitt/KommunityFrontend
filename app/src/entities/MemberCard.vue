@@ -20,7 +20,7 @@ const props = defineProps({
 	display: grid;
 	margin: 0 auto;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 2fr 2fr;
+	grid-template-rows: 1fr 3fr 3fr;
 	grid-template-areas:
 		'card__title card__img .'
 		'card__description card__img .'
@@ -30,13 +30,21 @@ const props = defineProps({
 		grid-area: card__title;
 		font-size: 32px;
 		font-weight: 700;
-		max-width: 175px;
+		max-width: 165px;
+		align-self: start;
+		margin-top: -12px;
 	}
 
 	&__description {
 		grid-area: card__description;
-		font-size: 16px;
-		max-width: 175px;
+		font-size: 14px;
+		max-width: 165px;
+		@media screen and (min-width: 360px) {
+			font-size: 15px;
+		}
+		@media screen and (min-width: 395px) {
+			font-size: 16px;
+		}
 	}
 
 	&__img {
@@ -48,6 +56,7 @@ const props = defineProps({
 		vertical-align: bottom;
 		object-fit: cover;
 		border-radius: 10px;
+		justify-self: end;
 	}
 }
 </style>
