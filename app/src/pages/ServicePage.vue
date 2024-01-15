@@ -55,7 +55,6 @@ onBeforeUnmount(() => {
 .background-text {
 	top: -10px;
 	margin-left: 5px;
-	//margin-right: auto;
 }
 
 .Breadcrumbs {
