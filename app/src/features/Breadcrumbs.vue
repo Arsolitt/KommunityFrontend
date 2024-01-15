@@ -22,7 +22,7 @@ const props = defineProps({
 
 <style scoped lang="scss">
 ul {
-	margin-top: 65px;
 	display: inline-flex;
+	//align-content: flex-end;
 }
 </style>

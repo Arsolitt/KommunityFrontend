@@ -18,35 +18,16 @@ const projects = projectsStore.projectsByServiceId(route.params['serviceId']);
 const navbarStore = useNavbarStore();
 navbarStore.activeLinks['services'] = true;
 
-const createBreadcrumbsLinks = (name, id) => {
-	const links = [];
-	switch (name) {
-		case 'Service':
-			const service = servicesStore.serviceById(id);
-			links.push({
-				name: 'Работы',
-				url: '/#services',
-			});
-			links.push({
-				name: service.name,
-				url: service.url,
-			});
-			break;
-		// case 'Team':
-		// 	links.push({
-		// 		name: 'Команда',
-		// 		url: '/#team',
-		// 	});
-		// 	break;
-		// case 'Project':
-		// 	links.push({
-		// 		name: 'Работы',
-		// 		url: '/#team',
-		// 	});
-		// 	break;
-	}
-	return links;
-};
+const links = [];
+const service = servicesStore.serviceById(route.params['serviceId']);
+links.push({
+	name: 'Работы',
+	url: '/#services',
+});
+links.push({
+	name: service.name,
+	url: service.url,
+});
 
 onBeforeUnmount(() => {
 	navbarStore.activeLinks['services'] = false;
@@ -56,15 +37,12 @@ onBeforeUnmount(() => {
 <template>
 	<section class="section">
 		<BaseContainer>
-			<Breadcrumbs
-				:links="
-					createBreadcrumbsLinks(route.name, route.params['serviceId'])
-				" />
+			<Breadcrumbs :links="links" class="Breadcrumbs" />
 		</BaseContainer>
-		<BackgroundHeader :fullBright="true">
-			{{ servicesStore.serviceById(route.params['serviceId']).name }}
+		<BackgroundHeader :fullBright="true" class="BackgroundHeader">
+			{{ service.name }}
 		</BackgroundHeader>
-		<ProjectsSlider :projects="projects" />
+		<ProjectsSlider :projects="projects" class="ProjectsSlider" />
 	</section>
 </template>
 
@@ -72,5 +50,18 @@ onBeforeUnmount(() => {
 .section {
 	max-height: 100dvh;
 	overflow: hidden;
+}
+
+.background-text {
+	top: -10px;
+	margin-left: -8px;
+}
+
+.Breadcrumbs {
+	margin-top: 60px;
+}
+
+.ProjectsSlider {
+	margin-top: -60px;
 }
 </style>

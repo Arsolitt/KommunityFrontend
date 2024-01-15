@@ -51,7 +51,7 @@ const navbarStore = useNavbarStore();
 
 <style lang="scss" scoped>
 nav {
-	background-color: #fff;
+	background-color: #f2f2f2;
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
