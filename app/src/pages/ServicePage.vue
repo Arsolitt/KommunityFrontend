@@ -1,5 +1,5 @@
 <script setup>
-import ProjectsSlider from '@entities/ProjectsSlider.vue';
+import ProjectsSlider from '@features/ProjectsSlider.vue';
 import { useProjectsStore } from '@store/ProjectsStore.js';
 import BackgroundHeader from '@ui/BackgroundHeader.vue';
 import { useRoute } from 'vue-router';
@@ -26,7 +26,7 @@ links.push({
 });
 links.push({
 	name: service.name,
-	url: service.url,
+	url: route.path,
 });
 
 onBeforeUnmount(() => {
@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
 		<BaseContainer>
 			<Breadcrumbs :links="links" class="Breadcrumbs" />
 		</BaseContainer>
-		<BackgroundHeader :fullBright="true" class="BackgroundHeader">
+		<BackgroundHeader :fullBright="true">
 			{{ service.bgName || service.name }}
 		</BackgroundHeader>
 		<ProjectsSlider :projects="projects" class="ProjectsSlider" />

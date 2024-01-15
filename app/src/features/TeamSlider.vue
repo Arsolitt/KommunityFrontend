@@ -35,13 +35,13 @@ const totalClass = '';
 			v-for="member in team"
 			:key="member.memberId"
 			class="slider__slide">
-			<a href="">
+			<a :href="'team/' + member.memberId">
 				<img :src="member.img" alt="" class="slider__img" />
 			</a>
 			<div>
 				<h5 class="slider__name">
 					{{ member.name }}
-					<CardButton :href="member.name" />
+					<CardButton :href="'team/' + member.memberId" />
 				</h5>
 				<span class="slider__specialization">
 					{{ member.specialization }}

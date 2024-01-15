@@ -46,10 +46,4 @@ const projects = [
 	},
 ];
 
-function projectsByTag() {}
-
-function projectsByAuthor() {}
-
-function projectAuthors() {}
-
-export { projects, projectsByTag, projectsByAuthor, projectAuthors };
+export { projects };

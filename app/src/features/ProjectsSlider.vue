@@ -11,7 +11,9 @@ const slidesPerView = projects.length - 1;
 </script>
 
 <template>
-	<div class="my-wrapper" :style="`height: ${projects.length * 230}px`">
+	<div
+		class="my-wrapper project-slider"
+		:style="`height: ${projects.length * 230}px`">
 		<Swiper
 			:loop="true"
 			:slides-per-group="1"

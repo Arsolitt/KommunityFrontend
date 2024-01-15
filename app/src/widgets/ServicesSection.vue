@@ -2,7 +2,7 @@
 import BaseContainer from '@ui/BaseContainer.vue';
 import { onMounted, ref } from 'vue';
 import { useNavbarStore } from '@store/NavbarStore.js';
-import ServicesList from '@entities/ServicesList.vue';
+import ServicesList from '@features/ServicesList.vue';
 
 const navbarStore = useNavbarStore();
 
