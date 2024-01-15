@@ -75,6 +75,12 @@ const totalClass = '';
 		font-weight: 700;
 		line-height: 24px;
 		font-size: 20px;
+		margin-bottom: 5px;
+
+		.card-button {
+			vertical-align: bottom;
+			margin-top: 5px;
+		}
 	}
 
 	&__navigation {

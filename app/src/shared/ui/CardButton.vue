@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<a href=""><img alt="" src="@svg/card__button.svg" /></a>
+	<a href="" class="card-button"><img alt="" src="@svg/card__button.svg" /></a>
 </template>
 
 <style lang="scss" scoped>
