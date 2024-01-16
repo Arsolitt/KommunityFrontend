@@ -38,7 +38,9 @@ onBeforeUnmount(() => {
 	<BaseContainer>
 		<Breadcrumbs :links="links" class="Breadcrumbs" />
 	</BaseContainer>
-	<BackgroundHeader :fullBright="true">{{ member.name }}</BackgroundHeader>
+	<BackgroundHeader :fullBright="true">
+		{{ member.specialization }}
+	</BackgroundHeader>
 	<BaseContainer>
 		<MemberCard :member="member" />
 	</BaseContainer>
