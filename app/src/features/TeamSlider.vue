@@ -11,6 +11,10 @@ const teamStore = useTeamStore();
 const team = teamStore.team;
 const currentClass = '';
 const totalClass = '';
+
+const memberImg = img => {
+	event.target.src = img;
+};
 </script>
 
 <template>
@@ -36,7 +40,14 @@ const totalClass = '';
 			:key="member.memberId"
 			class="slider__slide">
 			<a :href="'team/' + member.memberId">
-				<img :src="member.img" alt="" class="slider__img" />
+				<img
+					:src="member.img"
+					alt=""
+					class="slider__img"
+					@mouseout="memberImg(member.img)"
+					@mouseover="
+						memberImg(member.imgHover ? member.imgHover : member.img)
+					" />
 			</a>
 			<div>
 				<h5 class="slider__name">

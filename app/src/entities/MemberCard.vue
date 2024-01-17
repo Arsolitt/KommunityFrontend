@@ -5,13 +5,22 @@ const props = defineProps({
 		required: true,
 	},
 });
+
+const memberImg = img => {
+	event.target.src = img;
+};
 </script>
 
 <template>
 	<div class="card">
 		<h5 class="card__title">{{ member.name }}</h5>
 		<p class="card__description">{{ member.description }}</p>
-		<img :src="member.img" alt="" class="card__img" />
+		<img
+			:src="member.img"
+			alt=""
+			class="card__img"
+			@mouseout="memberImg(member.img)"
+			@mouseover="memberImg(member.imgHover ? member.imgHover : member.img)" />
 	</div>
 </template>
 

@@ -7,7 +7,8 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Арт-директор',
-		img: '/temp/team_2.gif',
+		img: '/temp/team_0.gif',
+		imgHover: '/temp/team_0-hover.gif',
 	},
 	{
 		memberId: '1',
@@ -17,7 +18,8 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Дизайнер',
-		img: '/temp/team_3.png',
+		img: '/temp/team_1.png',
+		imgHover: '',
 	},
 	{
 		memberId: '2',
@@ -27,7 +29,8 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Видеомейкер',
-		img: '/temp/team_3.png',
+		img: '/temp/team_1.png',
+		imgHover: '',
 	},
 	{
 		memberId: '3',
@@ -37,7 +40,8 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Фотограф',
-		img: '/temp/team_3.png',
+		img: '/temp/team_1.png',
+		imgHover: '',
 	},
 	{
 		memberId: '4',
@@ -47,7 +51,8 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Дизайнер',
-		img: '/temp/team_1.png',
+		img: '/temp/team_4.png',
+		imgHover: '',
 	},
 ];
 
