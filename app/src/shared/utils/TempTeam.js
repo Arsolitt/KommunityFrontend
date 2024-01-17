@@ -17,7 +17,7 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Дизайнер',
-		img: '/temp/team_2.gif',
+		img: '/temp/team_3.gif',
 	},
 	{
 		memberId: '2',
@@ -27,7 +27,7 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Видеомейкер',
-		img: '/temp/team_2.gif',
+		img: '/temp/team_3.gif',
 	},
 	{
 		memberId: '3',
@@ -37,7 +37,7 @@ const team = [
 			'и ехать в офис ради небольшого диалога. С нами можно побщаться  \n' +
 			'в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и другие...)',
 		specialization: 'Фотограф',
-		img: '/temp/team_2.gif',
+		img: '/temp/team_3.gif',
 	},
 	{
 		memberId: '4',
