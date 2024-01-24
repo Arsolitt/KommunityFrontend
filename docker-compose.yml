@@ -2,18 +2,19 @@ version: '3.9'
 
 services:
   landing:
-    build: # откуда брать инструкции для билда
+    build:
       context: ./app/
       dockerfile: Dockerfile
       args:
-        UID: 1000
-        GID: 1000
-    image: kommunity_landing # название образа
-    container_name: kommunity_landing # имя контейнера
-    restart: unless-stopped # перезагрузка, если что-то пошло не так
+        UID: ${UID}
+        GID: ${UID}
+        PORT: ${DEV_PORT}
+    image: ${PROJECT_NAME}_image
+    container_name: ${PROJECT_NAME}_landing
+    restart: unless-stopped
     stdin_open: true
     tty: true
     volumes:
       - ./app:/home/app
     ports:
-      - "3333:3333" # какой порт показывать снаружи
+      - "${DEV_PORT}:3333"

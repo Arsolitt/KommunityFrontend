@@ -1,3 +1,4 @@
 .idea
 app/dist
 app/node_modules
+.env

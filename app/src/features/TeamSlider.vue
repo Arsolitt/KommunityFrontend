@@ -5,6 +5,7 @@ import SliderNavigation from '@ui/SliderNavigation.vue';
 import { renderSliderPagination } from '@utils/renderSliderPagination.js';
 import { useTeamStore } from '@store/TeamStore.js';
 import CardButton from '@ui/CardButton.vue';
+import { onMounted, ref } from 'vue';
 
 const modules = [Navigation, Pagination];
 const teamStore = useTeamStore();
@@ -13,8 +14,35 @@ const currentClass = '';
 const totalClass = '';
 
 const memberImg = img => {
-	event.target.src = img;
+	if (
+		event.target.parentNode.parentNode.classList.contains('swiper-slide-active')
+	) {
+		event.target.src = img;
+	}
 };
+
+onMounted(() => {
+	const observer = new MutationObserver(mutations => {
+		for (const mutation of mutations) {
+			const member = team.find(member => {
+				return member.memberId === mutation.target.id.split('_')[1];
+			});
+			if (!mutation.target.classList.contains('swiper-slide-active')) {
+				mutation.target.childNodes[1].childNodes[0].src = member.imgStatic
+					? member.imgStatic
+					: member.img;
+			} else {
+				mutation.target.childNodes[1].childNodes[0].src = member.img;
+			}
+		}
+	});
+	const slides = ref(Array.from(document.getElementsByClassName('team-slide')));
+	slides.value.forEach(slide => {
+		observer.observe(slide, {
+			attributes: true,
+		});
+	});
+});
 </script>
 
 <template>
@@ -38,7 +66,8 @@ const memberImg = img => {
 		<SwiperSlide
 			v-for="member in team"
 			:key="member.memberId"
-			class="slider__slide">
+			:id="'team-slide_' + member.memberId"
+			class="slider__slide team-slide">
 			<a :href="'team/' + member.memberId">
 				<img
 					:src="member.img"
