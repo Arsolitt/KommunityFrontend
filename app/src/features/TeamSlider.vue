@@ -33,6 +33,7 @@ onMounted(() => {
 					: member.img;
 			} else {
 				mutation.target.childNodes[1].childNodes[0].src = member.img;
+				//
 			}
 		}
 	});
