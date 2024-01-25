@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
 	<BaseContainer>
 		<Breadcrumbs :links="links" class="Breadcrumbs" />
 	</BaseContainer>
-	<BackgroundHeader :fullBright="true">
+	<BackgroundHeader fullBright>
 		{{ member.specialization }}
 	</BackgroundHeader>
 	<BaseContainer>

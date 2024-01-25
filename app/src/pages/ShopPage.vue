@@ -1,30 +1,35 @@
 <script setup>
-import { useNavbarStore } from '@store/NavbarStore.js';
-import { onMounted, ref } from 'vue';
+import BackgroundHeader from '@ui/BackgroundHeader.vue';
+import ShopLayout from '@ui/ShopLayout.vue';
+import CatalogSection from '@widgets/CatalogSection.vue';
+import CartLink from '@ui/CartLink.vue';
 import BaseContainer from '@ui/BaseContainer.vue';
-import PlugComponent from '@shared/PlugComponent.vue';
-
-const navbarStore = useNavbarStore();
-
-const section = ref(null);
-const isIntersecting = ref(false);
-
-onMounted(() => {
-	const observer = new IntersectionObserver(([entry]) => {
-		isIntersecting.value = !!(entry && entry.isIntersecting);
-	});
-
-	observer.observe(section.value);
-
-	navbarStore.activeLinks[section.value.id] = isIntersecting;
-});
 </script>
 
 <template>
-	<section id="shop" ref="section" class="section">
-		<BaseContainer></BaseContainer>
-	</section>
-	<PlugComponent />
+	<ShopLayout>
+		<BackgroundHeader :fullBright="true">Магазин</BackgroundHeader>
+		<BaseContainer>
+			<CatalogSection />
+		</BaseContainer>
+	</ShopLayout>
+	<CartLink />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.cart-link {
+	position: fixed;
+	z-index: 100;
+	bottom: 18px;
+	right: 18px;
+}
+
+.section {
+	//margin-top: -47px;
+	padding-top: 75px;
+}
+
+.background-text {
+	margin-left: -10px;
+}
+</style>
