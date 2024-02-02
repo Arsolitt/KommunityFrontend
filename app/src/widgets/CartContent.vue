@@ -1,7 +1,7 @@
 <script setup>
-import SectionHeader from '@ui/SectionHeader.vue';
 import CartItem from '@entities/CartItem.vue';
 import { useShopStore } from '@store/ShopStore.js';
+import CartSummary from '@features/CartSummary.vue';
 
 const shopStore = useShopStore();
 
@@ -20,11 +20,41 @@ const numWord = value => {
 	<SectionHeader>
 		{{ shopStore.cart.length }} {{ numWord(shopStore.cart.length) }}
 	</SectionHeader>
-	<CartItem
-		@deleteItem="shopStore.deleteCartItem"
-		:product="product"
-		v-for="product in shopStore.cart"
-		:key="product.id" />
+	<div class="cart__wrapper">
+		<div class="cart__list">
+			<CartItem
+				@deleteItem="shopStore.deleteCartItem"
+				@decrementQuantity="shopStore.decrementQuantity"
+				@incrementQuantity="shopStore.incrementQuantity"
+				:product="product"
+				v-for="product in shopStore.cart"
+				:key="product.id" />
+		</div>
+		<CartSummary />
+	</div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.section__header {
+	margin-top: -47px;
+}
+
+.cart {
+	&__item {
+		margin-top: 15px;
+	}
+
+	&__summary {
+		height: 180px;
+		max-width: 362px;
+		position: fixed;
+		bottom: 0;
+		z-index: 10;
+	}
+
+	&__wrapper {
+		position: relative;
+		padding-bottom: 195px;
+	}
+}
+</style>

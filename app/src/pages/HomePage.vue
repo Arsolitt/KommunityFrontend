@@ -9,7 +9,6 @@ import LocationSection from '@widgets/LocationSection.vue';
 import ReviewsSection from '@widgets/ReviewsSection.vue';
 import ContactSection from '@widgets/ContactSection.vue';
 import FooterSection from '@widgets/FooterSection.vue';
-import PlugComponent from '@shared/PlugComponent.vue';
 import GlowingLight from '@ui/GlowingLight.vue';
 
 onMounted(() => {
@@ -52,20 +51,12 @@ onMounted(() => {
 	<ContactSection style="margin-bottom: 60px" />
 
 	<FooterSection />
-	<PlugComponent class="plug" />
 </template>
 
 <style lang="scss" scoped>
-.plug {
-	display: none;
-}
-
 @media screen and (min-width: 500px) {
 	* {
 		display: none;
-	}
-	.plug {
-		display: grid;
 	}
 }
 </style>

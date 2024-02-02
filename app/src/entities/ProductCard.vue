@@ -39,6 +39,7 @@ defineEmits(['changeCart']);
 		background: #141114;
 		padding: 12px;
 		max-width: 174px;
+		height: fit-content;
 	}
 
 	&__img {

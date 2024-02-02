@@ -4,8 +4,8 @@ import { computed } from 'vue';
 const props = defineProps({
 	active: {
 		type: Boolean,
-		default: false,
-	},
+		default: false
+	}
 });
 const cardImg = computed(() => {
 	return props.active
@@ -20,4 +20,8 @@ const cardImg = computed(() => {
 	</button>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.product__button {
+	cursor: pointer;
+}
+</style>

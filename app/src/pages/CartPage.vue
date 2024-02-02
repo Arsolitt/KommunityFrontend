@@ -5,6 +5,7 @@ import BackgroundHeader from '@ui/BackgroundHeader.vue';
 import ShopLayout from '@ui/ShopLayout.vue';
 import CartContent from '@widgets/CartContent.vue';
 import { useShopStore } from '@store/ShopStore.js';
+import ShopNotificationModal from '@features/ShopNotificationModal.vue';
 
 const shopStore = useShopStore();
 
@@ -27,6 +28,7 @@ links.push({
 		<BackgroundHeader fullBright>Корзина</BackgroundHeader>
 		<BaseContainer>
 			<CartContent />
+			<ShopNotificationModal />
 		</BaseContainer>
 	</ShopLayout>
 </template>
