@@ -5,6 +5,9 @@ metadata:
   namespace: kommunity
   labels:
     app: kommunity-landing
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    kubernetes.io/ingress.class: nginx
 spec:
   ingressClassName: nginx
   rules:
