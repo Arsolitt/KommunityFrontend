@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kommunity-landing
+  namespace: kommunity
+  labels:
+    app: kommunity-landing
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: dev.community42.ru
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: kommunity-landing
+            port: 
+              number: 80
+  tls:
+  - hosts:
+    - dev.community42.ru
+    secretName: kommunity-landing-ssl

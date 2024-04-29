@@ -11,8 +11,7 @@ jobs:
     name: Build and push artifact to registry
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: Short SHA
         id: short-sha
         uses: benjlevesque/short-sha@v3.0
@@ -26,3 +25,14 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
           tag: ${{ steps.short-sha.outputs.sha }}
           tag_with_latest: true
+  deploy:
+    name: Build and push artifact to registry
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        uses: actions-hub/kubectl@master
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+        with:
+          args: kubectl apply -f .kubernetes/*.yaml

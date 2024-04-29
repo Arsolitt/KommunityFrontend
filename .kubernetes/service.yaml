@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kommunity-landing
+  namespace: kommunity
+spec:
+  selector:
+    app: kommunity-landing
+  ports:
+  - protocol: TCP
+    port: 80
