@@ -27,7 +27,7 @@ jobs:
           tag_with_latest: true
   deploy:
     needs: build
-    name: Build and push artifact to registry
+    name: Deploy to Kubernetes
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,4 +36,5 @@ jobs:
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
-          args: apply -f .kubernetes --create-namespace -n kommunity
+          args: "apply -f .kubernetes -n kommunity"
+            
