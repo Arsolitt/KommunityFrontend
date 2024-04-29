@@ -11,7 +11,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: test.community42.ru
+  - host: community42.ru
     http:
       paths:
       - pathType: Prefix
@@ -23,5 +23,5 @@ spec:
               number: 80
   tls:
   - hosts:
-    - test.community42.ru
+    - community42.ru
     secretName: kommunity-landing-ssl
