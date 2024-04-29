@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kommunity-landing
+  namespace: kommunity
+  labels:
+    app: kommunity-landing
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kommunity-landing
+  template:
+    metadata:
+      labels:
+        app: kommunity-landing
+    spec:
+      containers:
+      - name: kommunity-landing
+        image: arsolitt/kommunity-landing:latest
+        ports:
+        - containerPort: 80

@@ -1,29 +1,29 @@
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  deploy:
-    name: Build and deploy static
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup NodeJS
-        uses: actions/setup-node@v4
-        with:
-          node-version: 21
-      - name: Install deps
-        run: cd app && npm ci
-      - name: Production build
-        run: cd app && npm run build && mv dist kommunityLanding
-      - name: Upload to hosting
-        uses: SamKirkland/web-deploy@v1
-        with:
-          target-server: ${{ secrets.HOST }}
-          remote-user: ${{ secrets.SSH_LOGIN }}
-          private-ssh-key: ${{ secrets.SSH_KEY }}
-          ssh-port: ${{ secrets.SSH_PORT }}
-          source-path: app/kommunityLanding
-          destination-path: /var/www/
+# jobs:
+#   build:
+#     name: Build artifact
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+#       - name: Setup NodeJS
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: 21
+#       - name: Install deps
+#         run: cd app && npm ci
+#       - name: Production build
+#         run: cd app && npm run build && mv dist kommunityLanding
+#       - name: Upload to hosting
+#         uses: SamKirkland/web-deploy@v1
+#         with:
+#           target-server: ${{ secrets.HOST }}
+#           remote-user: ${{ secrets.SSH_LOGIN }}
+#           private-ssh-key: ${{ secrets.SSH_KEY }}
+#           ssh-port: ${{ secrets.SSH_PORT }}
+#           source-path: app/kommunityLanding
+#           destination-path: /var/www/
