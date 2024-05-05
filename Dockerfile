@@ -7,5 +7,5 @@ RUN npm run build
 FROM nginx:1.23-alpine
 WORKDIR /usr/share/nginx/html
 COPY --from=builder /home/app/dist .
-COPY ./assets/ ./assets
+COPY ./assets/ ./assets/
 EXPOSE 80
